@@ -1,0 +1,32 @@
+
+
+.immigration-container {
+  margin-top: 190px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; /* Позволяет тексту оставаться над чекбоксами */
+  margin-left: -2px;
+}
+
+.Imi-text {
+  left: 140px;
+  font-family: 'Dancing Script', cursive; /* Красивый рукописный шрифт */
+  font-size: 2rem;
+  color: rgb(111, 207, 183);
+  font-weight: 400;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.green-link {
+  color: green;
+  text-decoration: none;
+  font-family: 'Roboto', cursive; /* Красивый рукописный шрифт */
+  font-size: 1.3rem;
+}
+
+.green-link:hover {
+  text-decoration: underline;
+}
+
+
+

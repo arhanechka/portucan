@@ -1,0 +1,65 @@
+.header-menu {
+    display: flex;
+    justify-content: flex-end; /* Размещаем меню справа */
+    background-color: rgba(243, 245, 249, 0.5); /* Полупрозрачный фон для всего меню */
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: sticky; /* Для того чтобы выпадающее меню было правильно позиционировано */
+    z-index: 1000;
+    top: 0; 
+  }
+  
+  .menu-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    position: relative; /* Для позиционирования выпадающего меню */
+    margin-left: 20px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0; /* Позиционируем выпадающее меню справа */
+    background-color: rgba(243, 245, 249, 0.9); /* Полупрозрачный фон для подменю */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Легкая тень для границ */
+    display: none; /* Скрыть меню по умолчанию */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 5px;
+  }
+  
+  .dropdown-item {
+    padding: 8px 16px;
+  }
+  
+  .dropdown-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .menu-item:hover .dropdown-menu {
+    display: block; /* Показать меню при наведении */
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-item:hover > a {
+    background-color: rgba(0, 0, 0, 0.1); /* Плавное изменение фона при наведении */
+  }
+  

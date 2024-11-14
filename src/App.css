@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;   /* Размер изображения (можно изменить) */
+  height: auto;  /* Автоматическая высота для сохранения пропорций */
+  
+
+}
+
+
+.App-image {
+  position: absolute;       /* Для позиционирования по правому краю */
+  right: 0;                 /* Прижимаем элемент к правому краю */
+  height: 100vh;            /* Высота на весь экран */
+  animation: none;  
+  top: 0      ;  /* Отключаем анимацию */
+  display: block;         
+  margin: 0;    
+  /* Размытый край слева */
+  mask-image: linear-gradient(to right, transparent 0%, black 20%);
+}
+
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-text {
+  position: absolute;
+  left: 140px;
+  top: 20vh;
+  font-family: 'Dancing Script', cursive; /* Красивый рукописный шрифт */
+  font-size: 3.5rem;
+  color: black;
+  font-weight: 400;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.App-descr {
+  position: absolute;
+  left: 160px;
+  top: 33vh;
+  font-family: 'Dancing Script', cursive; /* Красивый рукописный шрифт */
+  font-size: 2rem;
+  color: black;
+  font-weight: 400;
+}
+
+.main-class {
+  font-size: 18px; /* Adjust the font size for readability */
+  line-height: 1.6;
+  color: #333; /* Dark grey for better readability */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Text shadow for a subtle 3D effect */
+  margin-top: 20px; /* Add margin between paragraphs */
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
