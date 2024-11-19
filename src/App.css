@@ -44,7 +44,7 @@
 .App-text {
   position: absolute;
   left: 140px;
-  top: 20vh;
+  top: 18vh;
   font-family: 'Dancing Script', cursive; /* Красивый рукописный шрифт */
   font-size: 3.5rem;
   color: black;
@@ -54,9 +54,8 @@
 
 
 .App-descr {
-  position: absolute;
-  left: 160px;
-  top: 33vh;
+  position: relative;
+  top: 7vh;
   font-family: 'Dancing Script', cursive; /* Красивый рукописный шрифт */
   font-size: 2rem;
   color: black;

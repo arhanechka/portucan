@@ -12,6 +12,12 @@ import JobSeeker from './components/visas/JobSeeker';
 import Addresses from './components/visas/Addresses';
 import PassiveIncome from './components/visas/PassiveIncome';
 import Nif from './components/portugal/Nif';
+import Freelancer from './components/visas/Freelancer'
+import Nhr from './components/portugal/Nhr';
+import ChildResidency from './components/visas/ChildResidency';
+import FamilyMember from './components/visas/FamilyMember';
+import WorkContract from './components/visas/WorkContract';
+import Entrepreneur from './components/visas/Enterprener';
 
 
 function App() {
@@ -37,7 +43,14 @@ function App() {
           <Route path="/visas/lookForJob" element={<JobSeeker />} /> 
           <Route path="/immigration/addresses" element={<Addresses />} /> 
           <Route path="/visas/hasPassiveIncome" element={<PassiveIncome />} /> 
+          <Route path="/visas/isFreelancer" element={<Freelancer />} /> 
+          <Route path="/visas/hasChild" element={<ChildResidency />} /> 
+          <Route path="/visas/hasFamilyMember" element={<FamilyMember />} /> 
+          <Route path="/visas/hasWorkContract" element={<WorkContract />} /> 
+          <Route path="/visas/hasBusiness" element={<Entrepreneur />} /> 
+
           <Route path="/steps-in-portugal/nif" element={<Nif />} />
+          <Route path="/steps-in-portugal/nhr" element={<Nhr />} />
           </Routes>
         </div>
       </div>

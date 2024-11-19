@@ -6,6 +6,8 @@
     font-size: 1rem;
     color: black;
     margin-left: -2px;
+    margin-left: 10px; /* Adjust for preferred left alignment */
+    max-width: 800px;
 }
 
 .job-seeker-container h2 {
@@ -106,5 +108,158 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* fonts.css */
+
+/* General font and layout styling */
+body, .content-container, .modal-content {
+    font-family: Arial, sans-serif;
+    font-size: 0.9em; /* Make font smaller */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headings styling */
+h1, h2 {
+    font-weight: bold;
+    color: #00539C;
+    font-size: 1.1em; /* Smaller heading font */
+}
+
+.link-style, a {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Remove background color */
+.content-container {
+    background-color: transparent;
+    padding: 0;
+}
+
+.income-selector {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .explanation {
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .nhr-container {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .nhr-heading {
+    color: #0066cc;
+  }
+  
+  .nhr-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .nhr-list-item {
+    margin-bottom: 5px;
+  }
+
+  .guide-container {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  
+  .guide-title {
+    color: #0066cc;
+    margin-bottom: 20px;
+  }
+  
+  .guide-section {
+    margin-bottom: 20px;
+  }
+  
+  .guide-subtitle {
+    color: #00509e;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .guide-text {
+    margin-bottom: 10px;
+  }
+  
+  .guide-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .guide-steps {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  .guide-steps li {
+    margin-bottom: 10px;
+  }
+  
+  .guide-footer {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  
+  .guide-footer a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .guide-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .guide-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .guide-section {
+    margin-bottom: 20px;
+  }
+  
+  .guide-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .guide-text {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .guide-steps {
+    padding-left: 20px;
+    list-style-type: decimal;
+  }
+  
+  .guide-list {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+
 
   

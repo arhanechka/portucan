@@ -6,7 +6,7 @@ function Visas() {
         hasFamilyMember: false,
         hasPassiveIncome: false,
         isFreelancer: false,
-        hasChild15to18: false,
+        hasChild: false,
         hasWorkContract: false,
         hasBusiness: false,
         lookForJob: false
@@ -33,7 +33,7 @@ function Visas() {
             hasFamilyMember: "Visto de Reagrupamento Familiar - D6",
             hasPassiveIncome: "Visto D7 - Passive Income Visa",
             isFreelancer: "Visto D8 - (Freelancer Visa)",
-            hasChild15to18: "Visto de Estudante/Visto de Reagrupamento Familiar: D2/D6",
+            hasChild: "Visto de Estudante/Visto de Reagrupamento Familiar: D2/D6",
             hasWorkContract: "Visto de Trabalho (Work Contract Visa) - D3",
             hasBusiness: "Entrepreneur or Self-Employed Worker Visa - D2",
             willingToStudy: "Student visa - D4",
@@ -51,7 +51,7 @@ function Visas() {
                 return 'Visto D7 (Passive Income Visa) is a visa for individuals who wish to live in Portugal and can demonstrate a stable source of passive income, such as pensions, rental income, or investments. The visa allows residents to live in the country without the need to work, provided their income is sufficient to cover living expenses. It is valid for two years, with the possibility of renewal and eventually obtaining permanent residency.';
             case 'isFreelancer':
                 return 'Visto D8 (Freelancer Visa) is for self-employed individuals or freelancers who wish to live and work in Portugal. Applicants must prove that they have a stable income from their freelance work or remote job. The visa allows the holder to live in Portugal while continuing their independent work. It is initially granted for two years, with the possibility of renewal and eventual permanent residency.';
-            case 'hasChild15to18':
+            case 'hasChild':
                 return `Any child has the right to education in secondary school, and the parents of such a child have the right to reunite with them. The child must be between the ages of 14 and 18, studying in a general education school or enrolled in qualifying courses in secondary school (grades 10-12), exercising their right to compulsory education. To secure a place in a school, parents need to rent accommodation for a short period and obtain a registration certificate from the local municipality. The residence permit is issued to the student and is renewed annually if the education continues. Later, the parents can apply to the Immigration and Borders Service (SEF) as the parents of a minor resident. They will be able to obtain a residence permit in Portugal based on their child's studies and, in the future, legally live in the country.`;
             case 'hasWorkContract':
                 return 'Visto de Trabalho (Work Contract Visa) is for individuals who have secured a job with a Portuguese employer. To qualify, applicants must provide proof of a signed work contract with a company in Portugal. This visa allows the holder to live and work in Portugal for the duration of the employment contract. It is typically issued for a period of one year, with the possibility of renewal and the option to apply for permanent residency after several years of legal residence in the country.';
@@ -84,7 +84,7 @@ function Visas() {
                         checked={selectedOptions.hasFamilyMember}
                         onChange={handleCheckboxChange}
                     />
-                    I have a Portuguese family member
+                    I have a family member who is Portuguese or has Residency in Portugal
                 </label>
                 <label className="checkbox-label">
                     <input
@@ -107,8 +107,8 @@ function Visas() {
                 <label className="checkbox-label">
                     <input
                         type="checkbox"
-                        name="hasChild15to18"
-                        checked={selectedOptions.hasChild15to18}
+                        name="hasChild"
+                        checked={selectedOptions.hasChild}
                         onChange={handleCheckboxChange}
                     />
                     I have a child aged 15-18 years old

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../css/General.css';  // Add CSS styling for the component
+import '../../css/General.css';  
 
 function JobSeeker() {
     const [isModalOpen, setModalOpen] = useState(false);
