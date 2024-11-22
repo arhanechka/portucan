@@ -1,48 +1,20 @@
 import React, { useState } from 'react';
 import '../../css/General.css'; 
 import maple from '../../assets/maple.png'
- 
+import useModal from '../hooks/UseModal'; 
+import modalData from '../../utils/constants';
 
 function Freelancer() {
-    const [isModalOpen, setModalOpen] = useState(false);
-    const [activeModal, setActiveModal] = useState('');
-    const [isStepsVisible, setStepsVisible] = useState(false);
+  const { isModalOpen, modalContent, openModal, closeModal } = useModal(modalData); // pass modalData as an argument
 
-    const openModal = (modalType) => {
-        setActiveModal(modalType);
-        setModalOpen(true);
-    };
+  const [isStepsVisible, setStepsVisible] = useState(false);
 
-    const closeModal = () => {
-        setModalOpen(false);
-        setActiveModal('');
-    };
-    const toggleSteps = () => {
-        setStepsVisible(prevState => !prevState);
-    };
+  const toggleSteps = () => {
+      setStepsVisible(prevState => !prevState);
+  };
 
     const [selectedOption, setSelectedOption] = useState("");
-    const modalContent = {
-        fiscalResidence: (
-            <p>
-                In Canada, you can request a Certificate of Residency from the CRA by submitting Form NR73 (Determination of Residency) or a formal letter stating your need for the certificate. You can find it <a href='https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/nr73.html' target='blank'>here</a>. Mail only one completed copy of this form for the tax years in question (an additional form is not necessary for each tax year unless your situation changes, or directed otherwise) to the International Tax Services Office, Post Office Box 9769, Station T Ottawa ON K1G 3Y4 CANADA.
-            </p>
-        ),
-        criminalCanada: (
-            <p>
-                RCMP finger printed Criminal Record or your local Police Criminal background
-                check certificate <a href='https://rcmp.ca/en/criminal-records/criminal-record-checks/where-go' target='blank'>(check here).</a> If you haven’t been living in Canada for at least one year, Criminal Record from the country where the applicant has resided for over a year, with
-                the Hague Apostille (If applicable) or legalised. Applicants under sixteen years old
-                are exempt.
-            </p>
-        ),
-        criminalPortugal: (
-            <p>
-                The Portuguese Criminal Check Consent form, required for certain visa applications like the D7, allows Portuguese immigration authorities to conduct a background check on you within Portugal’s criminal records system. Even if you have never lived in Portugal, this consent ensures that authorities can verify any record you may have in their system. <a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/portugal.html?fbclid=IwY2xjawGNz8BleHRuA2FlbQIxMAABHT9xmHHMPl__GtF0NEuGJebH40bCi_JlRbAl0sWipUS_371plYP4Pon42A_aem_yeeoGScuGC14b3TymE0dbw#spec' target='blank'>Here’s how to obtain and provide this consent for canadians (If you live outside of Portugal -> Apply by email, mail or fax)
-                </a>
-            </p>
-        ),
-    };
+
 
   const explanations = {
     Single: "Income: €3,280 per month + Savings: €9,840",
@@ -200,12 +172,12 @@ value equivalent to four monthly minimum wages in Portugal.</strong> </li>
           </a>.
         </p>
       </footer>
-   {/* Modal */}
-   {isModalOpen && (
+           {/* Modal */}
+           {isModalOpen && (
                 <div className="modal">
                     <div className="modal-content">
                         <span className="close" onClick={closeModal}>&times;</span>
-                        {modalContent[activeModal]}
+                        {modalContent}
                     </div>
                 </div>
             )}

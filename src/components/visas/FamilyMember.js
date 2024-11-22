@@ -1,64 +1,18 @@
 import React, { useState } from 'react';
 import "../../css/General.css";
 import maple from '../../assets/maple.png'
+import useModal from '../hooks/UseModal'; 
+import modalData from '../../utils/constants';
 
 const FamilyMember = () => {
-    const [isModalOpen, setModalOpen] = useState(false);
-    const [activeModal, setActiveModal] = useState('');
-    const [isStepsVisible, setStepsVisible] = useState(false);
+  const { isModalOpen, modalContent, openModal, closeModal } = useModal(modalData); // pass modalData as an argument
 
-    const openModal = (modalType) => {
-        setActiveModal(modalType);
-        setModalOpen(true);
-    };
+  const [isStepsVisible, setStepsVisible] = useState(false);
 
-    const closeModal = () => {
-        setModalOpen(false);
-        setActiveModal('');
-    };
-    const toggleSteps = () => {
-        setStepsVisible(prevState => !prevState);
-    };
+  const toggleSteps = () => {
+      setStepsVisible(prevState => !prevState);
+  };
 
-    const modalContent = {
-        sefAuthorization: (
-        
-
-<div>
-  <h1 class="main-title">Family Reunification Authorization Notification (Autorização de Reagrupamento Familiar)</h1>
-
-  <p class="intro-text">
-    The notification of family reunification authorization (autorização de reagrupamento familiar) issued by the Immigration and Borders Services (SEF, now AIMA) is a document confirming that your application for family reunification has been approved. This document is typically issued in Portugal after your application has been processed and approved by the relevant authorities.
-  </p>
-
-  <p class="subheading">Process to Obtain the Document in Canada</p>
-
-  <ul class="process-steps">
-    <li><strong>Apply for Family Reunification Visa (D6) in Portugal:</strong> The person residing in Portugal (your sponsor) will apply for family reunification on your behalf. The process involves submitting required documents to SEF (AIMA) and undergoing a formal review.</li>
-
-    <li><strong>Approval of the Family Reunification Request:</strong> After the application is approved, SEF (now AIMA) issues the notification of family reunification authorization to the resident in Portugal. This document confirms the approval of the family reunification visa.</li>
-
-    <li><strong>Notification for Family Members:</strong> If you are the family member in Canada, the authorized notification is sent to the Portuguese consulate or relevant authorities in Canada. You can then present this authorization to initiate your residence visa application at the Portuguese consulate or embassy in Canada.</li>
-
-    <li><strong>Steps After Receiving Notification:</strong> With the family reunification authorization, you will be required to apply for your family reunification visa at the Portuguese consulate in Canada. This visa will allow you to travel to Portugal, where you can complete the process to obtain your residency permit.</li>
-  </ul>
-</div>
-        ),
-        criminalCanada: (
-            <p>
-                RCMP finger printed Criminal Record or your local Police Criminal background
-                check certificate <a href='https://rcmp.ca/en/criminal-records/criminal-record-checks/where-go' target='blank'>(check here).</a> If you haven’t been living in Canada for at least one year, Criminal Record from the country where the applicant has resided for over a year, with
-                the Hague Apostille (If applicable) or legalised. Applicants under sixteen years old
-                are exempt.
-            </p>
-        ),
-        criminalPortugal: (
-            <p>
-                The Portuguese Criminal Check Consent form, required for certain visa applications like the D7, allows Portuguese immigration authorities to conduct a background check on you within Portugal’s criminal records system. Even if you have never lived in Portugal, this consent ensures that authorities can verify any record you may have in their system. <a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/portugal.html?fbclid=IwY2xjawGNz8BleHRuA2FlbQIxMAABHT9xmHHMPl__GtF0NEuGJebH40bCi_JlRbAl0sWipUS_371plYP4Pon42A_aem_yeeoGScuGC14b3TymE0dbw#spec' target='blank'>Here’s how to obtain and provide this consent for canadians (If you live outside of Portugal -> Apply by email, mail or fax)
-                </a>
-            </p>
-        ),
-    };
   return (
     <div className="job-seeker-container">
       <h1 className="App-text">Portugal’s Family Reunification Visa (D6)</h1>
@@ -214,7 +168,7 @@ As appointment availability can take several months, it may be worth checking if
           </a>.
         </p>
         <p>
-        Official requirements list is 
+        Official requirements list is{' '} 
           <a
             href="https://toronto.consuladoportugal.mne.gov.pt/images/vistos/en/family_reunificationd6_en.pdf"
             target="_blank"
@@ -230,7 +184,7 @@ As appointment availability can take several months, it may be worth checking if
                 <div className="modal">
                     <div className="modal-content">
                         <span className="close" onClick={closeModal}>&times;</span>
-                        {modalContent[activeModal]}
+                        {modalContent}
                     </div>
                 </div>
             )}

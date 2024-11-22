@@ -1,38 +1,18 @@
 import React, { useState } from 'react';
-import '../../css/General.css';  
+import '../../css/General.css'; 
+import useModal from '../hooks/UseModal'; 
+import modalData from '../../utils/constants';
+
 
 function JobSeeker() {
-    const [isModalOpen, setModalOpen] = useState(false);
-    const [activeModal, setActiveModal] = useState('');
 
-    const openModal = (modalType) => {
-        setActiveModal(modalType);
-        setModalOpen(true);
-    };
 
-    const closeModal = () => {
-        setModalOpen(false);
-        setActiveModal('');
-    };
+    const { isModalOpen, modalContent, openModal, closeModal } = useModal(modalData); // pass modalData as an argument
 
-    const modalContent = {
-        financialResources: (
-            <p>
-                The minimum wage in most of Portugal is €822.50 per month, assuming 12 annual payments. In practice, however, payments are paid in 14 annual installments, so the minimum payment, in this case, would be €705. Therefore, the minimum amount in your account should be €2467.5. Keep in mind that it is always better to have a larger amount.
-            </p>
-        ),
-        expressionOfInterest: (
-            <p>
-                You must express your interest in enrolling in the IEFP, the Portuguese Public Employment Service, before submitting your Job Search Visa application. After submission, you'll receive a declaration via email, which you can use to apply for the visa.
-            </p>
-        ),
-        estimatedStay: (
-            <p>
-                The "Statement with the conditions for the estimated stay" should include your purpose for the stay, how you plan to support yourself, your accommodation details, and your financial resources for the entire stay. 
-                <a href="/Job_Seeker_Statement_Example.pdf" download="Job_Seeker_Statement_Example.pdf" target="_blank" rel="noopener noreferrer">
-             Example
-        </a>            </p>
-        )
+    const [isStepsVisible, setStepsVisible] = useState(false);
+
+    const toggleSteps = () => {
+        setStepsVisible(prevState => !prevState);
     };
 
     return (
@@ -97,12 +77,12 @@ function JobSeeker() {
                 <p>*** The visa is granted for 120 days and may be extended for another 60 days if you provide proof that you are enrolled in the IEFP as a jobseeker (one of proofs can be the <a href="https://www.iefp.pt/redecentros" target="_blank" rel="noopener noreferrer">registration</a> in the nearest job service).</p>
             </div>
 
-            {/* Modal */}
-            {isModalOpen && (
+           {/* Modal */}
+           {isModalOpen && (
                 <div className="modal">
                     <div className="modal-content">
                         <span className="close" onClick={closeModal}>&times;</span>
-                        {modalContent[activeModal]}
+                        {modalContent}
                     </div>
                 </div>
             )}

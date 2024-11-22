@@ -18,6 +18,8 @@ import ChildResidency from './components/visas/ChildResidency';
 import FamilyMember from './components/visas/FamilyMember';
 import WorkContract from './components/visas/WorkContract';
 import Entrepreneur from './components/visas/Enterprener';
+import StudyVisa from './components/visas/StudyVisa';
+import LanguageVisa from './components/visas/LanguageVisa';
 
 
 function App() {
@@ -48,6 +50,9 @@ function App() {
           <Route path="/visas/hasFamilyMember" element={<FamilyMember />} /> 
           <Route path="/visas/hasWorkContract" element={<WorkContract />} /> 
           <Route path="/visas/hasBusiness" element={<Entrepreneur />} /> 
+          <Route path="/visas/willingToStudy" element={<StudyVisa />} /> 
+          <Route path="/visas/willingToLearnLanguage" element={<LanguageVisa />} /> 
+           
 
           <Route path="/steps-in-portugal/nif" element={<Nif />} />
           <Route path="/steps-in-portugal/nhr" element={<Nhr />} />

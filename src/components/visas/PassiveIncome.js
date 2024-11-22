@@ -3,46 +3,19 @@ import '../../css/General.css';
 import '../../css/Immigration.css';
 import maple from '../../assets/maple.png'
 import arrow from '../../assets/arrow.webp'
+import useModal from '../hooks/UseModal'; 
+import modalData from '../../utils/constants';
 
 
 function PassiveIncome() {
-    const [isModalOpen, setModalOpen] = useState(false);
-    const [activeModal, setActiveModal] = useState('');
+    
+
+    const { isModalOpen, modalContent, openModal, closeModal } = useModal(modalData); // pass modalData as an argument
+
     const [isStepsVisible, setStepsVisible] = useState(false);
 
-    const openModal = (modalType) => {
-        setActiveModal(modalType);
-        setModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setModalOpen(false);
-        setActiveModal('');
-    };
     const toggleSteps = () => {
         setStepsVisible(prevState => !prevState);
-    };
-
-    const modalContent = {
-        financialResources: (
-            <p>
-                If you choose the Portugal D7 visa, you'll need to meet the passive income requirements and earn above the Portuguese minimum wage at least 820.00 euros per month (your income can be foreign sourced). Passive income includes pensions, rental income, investments, royalties, and annuities.
-            </p>
-        ),
-        criminalCanada: (
-            <p>
-                RCMP finger printed Criminal Record or your local Police Criminal background
-                check certificate <a href='https://rcmp.ca/en/criminal-records/criminal-record-checks/where-go' target='blank'>(check here).</a> If you haven’t been living in Canada for at least one year, Criminal Record from the country where the applicant has resided for over a year, with
-                the Hague Apostille (If applicable) or legalised. Applicants under sixteen years old
-                are exempt.
-            </p>
-        ),
-        criminalPortugal: (
-            <p>
-                The Portuguese Criminal Check Consent form, required for certain visa applications like the D7, allows Portuguese immigration authorities to conduct a background check on you within Portugal’s criminal records system. Even if you have never lived in Portugal, this consent ensures that authorities can verify any record you may have in their system. <a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/portugal.html?fbclid=IwY2xjawGNz8BleHRuA2FlbQIxMAABHT9xmHHMPl__GtF0NEuGJebH40bCi_JlRbAl0sWipUS_371plYP4Pon42A_aem_yeeoGScuGC14b3TymE0dbw#spec' target='blank'>Here’s how to obtain and provide this consent for canadians (If you live outside of Portugal -> Apply by email, mail or fax)
-                </a>
-            </p>
-        ),
     };
 
     return (
@@ -155,12 +128,12 @@ function PassiveIncome() {
                 )}
             </section>
 
-            {/* Modal */}
-            {isModalOpen && (
+          {/* Modal */}
+          {isModalOpen && (
                 <div className="modal">
                     <div className="modal-content">
                         <span className="close" onClick={closeModal}>&times;</span>
-                        {modalContent[activeModal]}
+                        {modalContent}
                     </div>
                 </div>
             )}
