@@ -46,42 +46,42 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/portucan" element={<Main />} />
-            <Route path="/portucan/immigration" element={<Immigration />} />
-            <Route path="/portucan/immigration/visas" element={<Visas />} />
-            <Route path="/portucan/immigration/documents" element={<Documents />} />
+            <Route path="/immigration" element={<Immigration />} />
+            <Route path="/immigration/visas" element={<Visas />} />
+            <Route path="/immigration/documents" element={<Documents />} />
             {/* <Route path="/steps-in-canada" element={<StepsInCanada />} /> */}
           {/* <Route path="/steps-in-portugal" element={<StepsInPortugal />} />
           <Route path="/our-service" element={<OurService />} />
           <Route path="/about" element={<About />} /> */}
-          <Route path="/portucan/contacts" element={<Contacts />} /> 
-          <Route path="/portucan/links" element={<Links />} /> 
-          <Route path="/portucan/visas/lookForJob" element={<JobSeeker />} /> 
-          <Route path="/portucan/immigration/addresses" element={<Addresses />} /> 
-          <Route path="/portucan/immigration/bank" element={<Banks />} /> 
+          <Route path="/contacts" element={<Contacts />} /> 
+          <Route path="/links" element={<Links />} /> 
+          <Route path="/visas/lookForJob" element={<JobSeeker />} /> 
+          <Route path="/immigration/addresses" element={<Addresses />} /> 
+          <Route path="/immigration/bank" element={<Banks />} /> 
 
-          <Route path="/portucan/visas/hasPassiveIncome" element={<PassiveIncome />} /> 
-          <Route path="/portucan/visas/isFreelancer" element={<Freelancer />} /> 
-          <Route path="/portucan/visas/hasChild" element={<ChildResidency />} /> 
-          <Route path="/portucan/visas/hasFamilyMember" element={<FamilyMember />} /> 
-          <Route path="/portucan/visas/hasWorkContract" element={<WorkContract />} /> 
-          <Route path="/portucan/visas/hasBusiness" element={<Entrepreneur />} /> 
-          <Route path="/portucan/visas/willingToStudy" element={<StudyVisa />} /> 
-          <Route path="/portucan/visas/willingToLearnLanguage" element={<LanguageVisa />} /> 
+          <Route path="/visas/hasPassiveIncome" element={<PassiveIncome />} /> 
+          <Route path="/visas/isFreelancer" element={<Freelancer />} /> 
+          <Route path="/visas/hasChild" element={<ChildResidency />} /> 
+          <Route path="/visas/hasFamilyMember" element={<FamilyMember />} /> 
+          <Route path="/visas/hasWorkContract" element={<WorkContract />} /> 
+          <Route path="/visas/hasBusiness" element={<Entrepreneur />} /> 
+          <Route path="/visas/willingToStudy" element={<StudyVisa />} /> 
+          <Route path="/visas/willingToLearnLanguage" element={<LanguageVisa />} /> 
            
-          <Route path="/portucan/steps-in-canada/ircc" element={<MovingChecklist />} />
-          <Route path="/portucan/steps-in-canada/taxes" element={<Cra />} />
-          <Route path="/portucan/steps-in-canada/Election217" element={<Election217 />} />
-          <Route path="/portucan/steps-in-canada/property" element={<Property />} />
-          <Route path="/portucan/steps-in-canada/moving" element={<MovingToPortugal />} />
-          <Route path="/portucan/steps-in-canada/movingGuide" element={<MovingGuide />} />
-          <Route path="/portucan/steps-in-canada/banks" element={<CadBanks />} />
+          <Route path="/steps-in-canada/ircc" element={<MovingChecklist />} />
+          <Route path="/steps-in-canada/taxes" element={<Cra />} />
+          <Route path="/steps-in-canada/Election217" element={<Election217 />} />
+          <Route path="/steps-in-canada/property" element={<Property />} />
+          <Route path="/steps-in-canada/moving" element={<MovingToPortugal />} />
+          <Route path="/steps-in-canada/movingGuide" element={<MovingGuide />} />
+          <Route path="/steps-in-canada/banks" element={<CadBanks />} />
           
           
           
-          <Route path="/portucan/steps-in-portugal/nif" element={<Nif />} />
-          <Route path="/portucan/steps-in-portugal/nhr" element={<Nhr />} />
-          <Route path="/portucan/steps-in-portugal/bank" element={<PortuBanks />} />
-          <Route path="/portucan/steps-in-portugal/property" element={<PortProperty />} />
+          <Route path="/steps-in-portugal/nif" element={<Nif />} />
+          <Route path="/steps-in-portugal/nhr" element={<Nhr />} />
+          <Route path="/steps-in-portugal/bank" element={<PortuBanks />} />
+          <Route path="/steps-in-portugal/property" element={<PortProperty />} />
 
 
           </Routes>
