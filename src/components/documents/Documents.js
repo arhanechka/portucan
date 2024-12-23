@@ -10,8 +10,8 @@ function Documents() {
   };
 
   const documentRequirements = [
-    { key: "passport", title: "Passport", text: "Passport, valid for at least 3 months after the estimated date of the stay plus one photocopy of passport. Notarized copy is not required. Keep in mind that the consulate will pick up your passport and can hold it for 60 business days before return. " },
-    { key: "photo", title: "Photo", text: "1 Photo, passport type, recent and in good condition to identify the applicant." },
+    { key: "passport", title: "Passport", text: `Passport, valid for at least 3 months after the estimated date of the stay plus one photocopy of passport. Notarized copy is not required. Keep in mind that the consulate will pick up your passport and can hold it for 60 business days before return. <br/> <b>  Required for all types of visas visas.</b>` },
+    { key: "photo", title: "Photo", text: `1 Photo, passport type, recent and in good condition to identify the applicant. <br/> <b>  Required for all types of visas visas.</b>` },
     { key: "criminal", title: "Criminal record", text: `
         <ul>
           <li>
@@ -34,32 +34,36 @@ function Documents() {
               here
             </a>
           </li>
+           <li><b>Required for all types of visas visas.</b></li>
         </ul>
       `},
       {
         key: "marriage",
         title: "Marriage Certificate",
+            text: `
+              <ul>
+                <li>1. Must be issued by the relevant government authority in the country where the marriage took place. An original or certified copy is usually required.</li>
+                <li>2. If the certificate is not in the official language of the visa-issuing country, provide a certified translation. For Portugal, the translation should be in Portuguese and may need to be notarized.</li>
+                <li>3. May require an apostille (under the Hague Convention) or legalization if issued in a country without a legal agreement with the destination country. This confirms its authenticity.</li>
+                <li>4. Some visa processes require the certificate to be issued or re-issued within a specific timeframe (e.g., no older than 3 or 6 months).</li>
+                <li><b>Ensure the marriage certificate is translated, apostilled, or legalized as per the specific visa guidelines.</b></li>
+                <li><b>Required for family reunification, spousal, and residency visas.</b></li>
+              </ul>
+            `
+      },
+      {
+        key: "birth",
+        title: "Birth Certificate",
         text: `
           <ul>
-            <li>
-              1. Must be issued by the relevant government authority in the country where the marriage took place.
-              An original or certified copy is usually required.
-            </li>
-            <li>
-              2. If the certificate is not in the official language of the visa-issuing country, you must provide a certified translation. For Portugal, the translation should be into Portuguese and may need to be notarized.
-            </li>
-            <li>
-              3. May require an apostille (under the Hague Convention) or legalization if issued in a country without a legal agreement with the destination country. This confirms its authenticity.
-            </li>
-            <li>
-              4. Some visa processes require the certificate to be issued or re-issued within a specific timeframe (e.g., no older than 3 or 6 months).
-            </li>
-            <li>
-              <b>Ensure the marriage certificate is translated, apostilled, or legalized as per the specific visa guidelines.</b>
-            </li>
+            <li>Issued by the relevant government authority (original or certified copy).</li>
+            <li>If not in the official language, provide a certified translation into Portuguese (for Portugal) and possibly notarize it.</li>
+            <li>Apostille or legalization may be required if issued in a country without a legal agreement with the destination country.</li>
+            <li>Some visa processes may require the certificate to be issued or re-issued within 3-6 months.</li>
+            <li><b>Required for family reunification, residence, citizenship, and sometimes student visas.</b></li>
           </ul>
         `
-      },
+      },      
     { key: "driver", title: "Driver licence", text: `
        
            <p> 1. You may drive in Portugal with your foreign driving permit for a period of 185 days after entering Portugal and before establishing residence (driving as a tourist). </p>
