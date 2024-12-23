@@ -31,7 +31,6 @@ import CadBanks from './components/canada/CadBanks';
 import PortuBanks from './components/portugal/PortuBanks';
 import PortProperty from './components/portugal/PortProperty';
 import Documents from './components/documents/Documents';
-import StepsInCanada from './components/canada/StepsInCanada';
 
 
 function App() {
@@ -50,7 +49,7 @@ function App() {
             <Route path="/immigration" element={<Immigration />} />
             <Route path="/immigration/visas" element={<Visas />} />
             <Route path="/immigration/documents" element={<Documents />} />
-            <Route path="/steps-in-canada" element={<StepsInCanada />} />
+            {/* <Route path="/steps-in-canada" element={<StepsInCanada />} /> */}
           {/* <Route path="/steps-in-portugal" element={<StepsInPortugal />} />
           <Route path="/our-service" element={<OurService />} />
           <Route path="/about" element={<About />} /> */}

@@ -14,7 +14,7 @@ const D3WorkContract = () => {
         <li>Possess unique skills and</li>
         <li>Either have a job offer or already have an employment contract with a Portuguese employer.</li>
       </ul>
-
+<p></p>
       <p>
         There are also some benefits that are specific to the D3 visa, such as:
       </p>
