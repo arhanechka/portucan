@@ -35,7 +35,8 @@ import Documents from './components/documents/Documents';
 
 function App() {
   return (
-    <Router basename="/portucan">
+        <Router>
+   
       <div className="App">
         <img src={logo} className='App-logo' alt="logo" />
         <HeaderMenu />
@@ -75,7 +76,8 @@ function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+          </Router>
+      
   );
 }
 
