@@ -166,7 +166,7 @@ function Visas() {
                         <div className="TextBlock-content">
                             {getOptionText(option)} 
                         </div>
-                        <a href={`/portucan/#/visas/hasPassiveIncome`}  className="more-link">More...</a>
+                        <a href={`/portucan/#/visas/${option}`}  className="more-link">More...</a>
                     </div>
                 ))}
             </div>
