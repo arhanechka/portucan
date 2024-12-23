@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/General.css';  
 import '../css/Immigration.css'
+import { Link } from 'react-router-dom';
 
 function Immigration() {
     return (
@@ -16,10 +17,10 @@ function Immigration() {
                 {/* Links Section */}
                 <div className="immigration-container">
                     <ul>
-                        <li ><a href="/immigration/visas" className="green-link">Visas</a></li>
-                        <li ><a href="/immigration/documents" className="green-link">Documents</a></li>
-                        <li ><a href="/immigration/process" className="green-link">Process</a></li>
-                        <li ><a href="/immigration/addresses" className="green-link">Addresses</a></li>
+                        <li ><Link to="/immigration/visas" className="green-link">Visas</Link></li>
+                        <li ><Link to="/immigration/documents" className="green-link">Documents</Link></li>
+                        <li ><Link to="/immigration/process" className="green-link">Process</Link></li>
+                        <li ><Link to="/immigration/addresses" className="green-link">Addresses</Link></li>
                     </ul>
                 </div>
             </div>
