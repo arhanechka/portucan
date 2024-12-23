@@ -200,7 +200,7 @@ const MovingChecklist = () => {
 
   return (
     <div className="general-container">
-      <h1 style={styles.heading}>Essential Steps to Take in Canada Before Immigrating to Portugal</h1>
+      <h1 className="App-text">Essential Steps to Take in Canada Before Immigrating to Portugal</h1>
       {steps.map((step, index) => (
         <div key={index} style={styles.step}>
           <h2 style={styles.stepTitle}>

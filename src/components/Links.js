@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Links.css';
+import '../css/General.css';  
 
 function Links() {
     const linksData = [
@@ -22,7 +23,7 @@ function Links() {
     ];
 
     return (
-        <div className="links-container">
+        <div className="general-container">
             <p className="App-text" style={{top: '7vh'}}>Useful Links</p>
             <table className="links-table">
                 <thead>

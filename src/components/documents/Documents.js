@@ -36,9 +36,30 @@ function Documents() {
           </li>
         </ul>
       `},
-      
-
-
+      {
+        key: "marriage",
+        title: "Marriage Certificate",
+        text: `
+          <ul>
+            <li>
+              1. Must be issued by the relevant government authority in the country where the marriage took place.
+              An original or certified copy is usually required.
+            </li>
+            <li>
+              2. If the certificate is not in the official language of the visa-issuing country, you must provide a certified translation. For Portugal, the translation should be into Portuguese and may need to be notarized.
+            </li>
+            <li>
+              3. May require an apostille (under the Hague Convention) or legalization if issued in a country without a legal agreement with the destination country. This confirms its authenticity.
+            </li>
+            <li>
+              4. Some visa processes require the certificate to be issued or re-issued within a specific timeframe (e.g., no older than 3 or 6 months).
+            </li>
+            <li>
+              <b>Ensure the marriage certificate is translated, apostilled, or legalized as per the specific visa guidelines.</b>
+            </li>
+          </ul>
+        `
+      },
     { key: "driver", title: "Driver licence", text: `
        
            <p> 1. You may drive in Portugal with your foreign driving permit for a period of 185 days after entering Portugal and before establishing residence (driving as a tourist). </p>
@@ -65,7 +86,19 @@ function Documents() {
         </ul>
         <p>3. The issuing and renewal of driving licenses is the exclusive competence of the <a href="http://www.imtonline.pt/index.php/condutores108d" target="_blank" rel="nofollow noopener">Institute of Mobility and Transport (IMT) in Portugal</a></p>
       `},
-    { key: "housing", title: "Proof of Housing", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proof of Housing requirements details go here." },
+    { key: "housing", title: "Proof of Housing", text: `You must provide proof of housing in Portugal. This can be either a rental agreement (ranging from 6 months to a year, depending on the specific visa requirements) or proof that you own property in Portugal. I case you own a property, it can be the next documents: <br/>
+        <ul>
+        <li>
+          Caderneta Predial Urbana - official name in Portuguese. In English, it is often referred to as the Property Tax Registration Document or Land Registry Certificate, depending on the context. This document is issued by the Portuguese Tax Authority (Autoridade Tributária) and provides detailed information about a property, such as its description, location, and fiscal details.
+        </li>
+         <li>
+          Certidão de Teor is an official document in Portugal that provides detailed information about a specific property or legal entity. It is issued by the Conservatória do Registo Predial (Land Registry Office) and serves as a certificate of registration, confirming the current ownership, rights, and encumbrances (e.g., mortgages, liens) on a property.
+          </li>
+          <li>
+          Escritura de Compra e Venda is the Deed of Purchase and Sale in Portugal. It is a legally binding document that formalizes the transfer of ownership of a property from the seller to the buyer. This deed is created during the property transaction process and must be signed before a notary or other authorized legal official in Portugal.
+          </li>
+          ` },
+        
   ];
 
   return (

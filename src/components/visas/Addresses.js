@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/Links.css';
+import '../../css/General.css';  
 
 
 function Addresses() {
@@ -32,7 +33,7 @@ function Addresses() {
         }
     ];
     
-  return <div className="links-container" >   <p className="App-text" style={{top: '8vh'}}>Addresses</p>
+  return <div className="general-container" >   <p className="App-text" style={{top: '8vh'}}>Addresses</p>
             <table className="links-table">
                 <thead>
                     <tr>
