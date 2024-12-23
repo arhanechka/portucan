@@ -16,7 +16,7 @@
 
 
 .App-image {
-  position: absolute;       /* Для позиционирования по правому краю */
+  position: fixed;       /* Для позиционирования по правому краю */
   right: 0;                 /* Прижимаем элемент к правому краю */
   height: 100vh;            /* Высота на весь экран */
   animation: none;  
@@ -42,7 +42,8 @@
 }
 
 .App-text {
-  position: absolute;
+  position: unset;
+  max-width: 100%; 
   left: 140px;
   top: 18vh;
   font-family: 'Dancing Script', cursive; /* Красивый рукописный шрифт */

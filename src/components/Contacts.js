@@ -45,22 +45,11 @@ const Contacts = () => {
   };
 
   return (
-    <div className="contact-container">
-      <h1>Contact Us</h1>
-      <div className="about-container">
-        <div className="about-image">
-          <img src={aboutImage} alt="About Anna" />
-        </div>
-        <div className="about-info">
-          <h2>About Me</h2>
-          <p>
-            Hello, my guest. My name is Anna Arkhipchuk, a Ukrainian and Canadian musician and programmer who sincerely loves Portugal and dreams of moving there. I lived in Portugal for six months in 2022, after which I began learning the language, studying the history and culture of the country, as well as exploring opportunities for Canadians to move to Portugal and the steps to make it happen. I hope my resource will be useful to you both in terms of information and helpful contacts. Boa sorte!
-          </p>
-        </div>
-      </div>
+    <div className="job-seeker-container">
+      <h1 className='App-text'>Contact Us</h1>
 
       {/* Contact Form Section */}
-      <div className="contact-form-container">
+      <div>
         <h2>Send a Message</h2>
         <form className="contact-form" onSubmit={handleSubmit} noValidate>
           <label htmlFor="name">Name</label>

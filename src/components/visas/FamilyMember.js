@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../../css/General.css";
 import maple from '../../assets/maple.png'
 import useModal from '../hooks/UseModal'; 
-import modalData from '../../utils/constants';
+import {modalData} from '../../utils/constants';
 
 const FamilyMember = () => {
   const { isModalOpen, modalContent, openModal, closeModal } = useModal(modalData); // pass modalData as an argument

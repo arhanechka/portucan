@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../css/General.css'; 
 import useModal from '../hooks/UseModal'; 
-import modalData from '../../utils/constants';
+import {modalData} from '../../utils/constants';
 
 
 function JobSeeker() {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../css/General.css'; 
 import maple from '../../assets/maple.png'
 import useModal from '../hooks/UseModal'; 
-import modalData from '../../utils/constants';
+import {month_wage, modalData} from '../../utils/constants';
 
 function Freelancer() {
   const { isModalOpen, modalContent, openModal, closeModal } = useModal(modalData); // pass modalData as an argument
@@ -17,12 +17,11 @@ function Freelancer() {
 
 
   const explanations = {
-    Single: "Income: €3,280 per month + Savings: €9,840",
-    Couple: "Income: €4,920 per month + Savings: €14,760",
-    "Parents + 1 child": "Income: €5,904 per month + Savings: €17,712",
-    "Parents + 2 children": "Income: €6,888 per month + Savings: €20,664",
-    "Parents + 3 children": "Income: €7,872 per month + Savings: €23,616",
-    "Parents + 4 children": "Income: €8,856 per month + Savings: €26,568",
+    Single: `Income: €${month_wage*4} per month + Savings: €${month_wage*12}`,
+    Couple: `Income: €${month_wage*4 + month_wage*2}  per month + Savings: €${month_wage*12 + (month_wage*12)/2}`,
+    "Parents + 1 child": `Income: €${month_wage*4 + month_wage*2 + (month_wage*4)*0.30} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)/4}`,
+    "Parents + 2 children": `Income: €${month_wage*4 + month_wage*2 + (month_wage*4)*0.60} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)/2}`,
+    "Parents + 3 children": `Income: €${month_wage*4 + month_wage*2 + (month_wage*4)*0.90} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)*0.75} `,
   };
     return (  <div className="job-seeker-container">
     <h1 className='App-text'>Overview of Portugal’s D8 Visa</h1>
@@ -41,7 +40,7 @@ function Freelancer() {
     <section>
         <h2>Financial Requirements</h2>
         <p>
-            <span className="highlight">Minimum Monthly Income:</span> Applicants must demonstrate an average monthly income of <strong>€3,280</strong> (4x Portugal’s minimum wage of €820).  
+            <span className="highlight">Minimum Monthly Income:</span> Applicants must demonstrate an average monthly income of <strong>€{month_wage*4}</strong> (4x Portugal’s minimum wage of €{month_wage}).  
             <br />
         </p>
     </section>
@@ -52,13 +51,13 @@ function Freelancer() {
             Portugal allows family inclusion in the D8 application:
             <ul>
                 <li>
-                    <strong>Spouse/Partner:</strong> Add 50% of the income requirement (€1,640/month).  
+                    <strong>Spouse/Partner:</strong> Add 50% of the income requirement (€{month_wage*2}/month).  
                     Provide proof of a long-term relationship (e.g., shared utility bills or bank statements if cohabitating for 3+ years).
                 </li>
                 <li>
-                    <strong>Dependent Children:</strong> Add 30% for each child (€984/month). Dependents include those under 18 or full-time students.
+                    <strong>Dependent Children:</strong> Add 30% for each child (€{month_wage*4*0.30}/month). Dependents include those under 18 or full-time students.
                 </li>
-                <p>That quickly adds up, especially as the Portuguese authorities will be looking at the main applicant’s income rather than a combination of the two. So, if you’re bringing your better half, you’ll need €3280 + 50% (€1640) or €4920.
+                <p>That quickly adds up, especially as the Portuguese authorities will be looking at the main applicant’s income rather than a combination of the two. So, if you’re bringing your better half, you’ll need €{month_wage*4} + 50% (€{month_wage*2}) or €{month_wage*6}.
 
 Because of these income requirements, Portugal’s nomad visa is mainly popular with those from the United States, Canada, the UK, and other countries with higher salaries.</p>
             </ul>
@@ -69,9 +68,9 @@ Because of these income requirements, Portugal’s nomad visa is mainly popular 
                 <h2>Savings</h2>
                 <p>Applicants must also show they have a financial safety net equivalent to one year’s income saved in a Portuguese bank account:</p>
                 <ul>
-                    <li><strong>Single Applicants:</strong> €9,840 (12 months x €820)</li>
-                    <li><strong>Couples:</strong> €14,760 (12 months x €1,230)</li>
-                    <li><strong>Parents with Children:</strong> Add €2,952 for each dependent child (12 months x €246)</li>
+                    <li><strong>Single Applicants:</strong> €{12*month_wage} (12 months x €{month_wage})</li>
+                    <li><strong>Couples:</strong> €{(month_wage+month_wage/2)*12} (12 months x €{month_wage+month_wage/2}*12)</li>
+                    <li><strong>Parents with Children:</strong> Add €{(12*month_wage)/4} for each dependent child (12 months x €{month_wage/4})</li>
                 </ul>
             </section>
             <section>
@@ -123,7 +122,7 @@ Because of these income requirements, Portugal’s nomad visa is mainly popular 
                             <li><strong>Marriage and Birth Certificates:</strong> If applicable, request these documents from the relevant government authorities.</li>
                             <li><strong>Travel Insurance:</strong> Travel insurance covering repatriation and at least €30,000 in coverage for the duration of your stay is required until your SEF appointment.</li>
                             <li><strong>Health Insurance:</strong> Health insurance is necessary before your SEF appointment, though you can get it through brokers or Portuguese banks.</li>
-                            <li><strong>Passport Photos:</strong> One passport-sized photo are required.</li>
+                            <li><strong>Passport Photos:</strong> One passport-sized photo is required.</li>
                             <li><strong>Flight Itinerary:</strong> A return flight may be requested even before your visa is approved.</li>
 
                             <li><strong><a href='../steps-in-portugal/nif'> NIF Number:</a></strong> Your Portuguese tax ID number is required. It can be obtained through a lawyer (for non-EU/EEA residents who need a fiscal representative) or by your own.</li>
@@ -161,14 +160,12 @@ value equivalent to four monthly minimum wages in Portugal.</strong> </li>
       </ul>
             </section>
             <footer className="guide-footer">
-        <p>
-        Official requirements list is 
-          <a
+        <p>      <a
             href="https://toronto.consuladoportugal.mne.gov.pt/images/vistos/en/digital_nomadsdr_en.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
-              here
+        Official requirements list is here
           </a>.
         </p>
       </footer>

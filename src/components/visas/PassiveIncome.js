@@ -4,7 +4,7 @@ import '../../css/Immigration.css';
 import maple from '../../assets/maple.png'
 import arrow from '../../assets/arrow.webp'
 import useModal from '../hooks/UseModal'; 
-import modalData from '../../utils/constants';
+import {month_wage, modalData} from '../../utils/constants';
 
 
 function PassiveIncome() {
@@ -13,11 +13,18 @@ function PassiveIncome() {
     const { isModalOpen, modalContent, openModal, closeModal } = useModal(modalData); // pass modalData as an argument
 
     const [isStepsVisible, setStepsVisible] = useState(false);
+    const [selectedOption, setSelectedOption] = useState("");
 
     const toggleSteps = () => {
         setStepsVisible(prevState => !prevState);
     };
-
+  const explanations = {
+    Single: `Income: €${month_wage} per month + Savings: €${month_wage*12}`,
+    Couple: `Income: €${month_wage + month_wage/2}  per month + Savings: €${month_wage*12 + (month_wage*12)/2}`,
+    "Parents + 1 child": `Income: €${month_wage + month_wage/2 + (month_wage)*0.30} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)*0.30}`,
+    "Parents + 2 children": `Income: €${month_wage + month_wage/2 + (month_wage)*0.60} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)*0.30*2}`,
+    "Parents + 3 children": `Income: €${month_wage + month_wage/2 + (month_wage)*0.90} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)*0.30*3} `,
+  };
     return (
         <div className="job-seeker-container">
             <h1 className='App-text'>Main Requirements for the D7 Visa</h1>
@@ -49,10 +56,10 @@ function PassiveIncome() {
 
             <section>
                 <h2>Income Requirement</h2>
-                <p>For a single applicant, the minimum income needed is <strong>€820 per month</strong> (2024 figure).</p>
+                <p>For a single applicant, the minimum income needed is <strong>€{month_wage} per month</strong> (2025 figure).</p>
                 <ul>
-                    <li><strong>Bringing a Partner?</strong> Add 50%, which is €410 per month.</li>
-                    <li><strong>Including Dependent Children?</strong> For each child, add €246 per month.</li>
+                    <li><strong>Bringing a Partner?</strong> Add 50%, which is €{month_wage/2} per month.</li>
+                    <li><strong>Including Dependent Children?</strong> For each child, add €{month_wage*0.30} per month (30% of minimum income).</li>
                 </ul>
             </section>
 
@@ -60,12 +67,31 @@ function PassiveIncome() {
                 <h2>Savings</h2>
                 <p>Applicants must also show they have a financial safety net equivalent to one year’s income saved in a Portuguese bank account:</p>
                 <ul>
-                    <li><strong>Single Applicants:</strong> €9,840 (12 months x €820)</li>
-                    <li><strong>Couples:</strong> €14,760 (12 months x €1,230)</li>
-                    <li><strong>Parents with Children:</strong> Add €2,952 for each dependent child (12 months x €246)</li>
+                    <li><strong>Single Applicants:</strong> €{month_wage*12} (12 months x €{month_wage})</li>
+                    <li><strong>Couples:</strong> €{month_wage*12+month_wage/2*12} (12 months x (€{month_wage}+€{month_wage/2}))</li>
+                    <li><strong>Parents with Children:</strong> Starting from €{month_wage*12+month_wage/2*12 + month_wage*0.30*12}: Add €{month_wage*12*0.30} for each dependent child (12 months x €{month_wage*0.30})</li>
                 </ul>
             </section>
 
+            <select
+          className="income-selector"
+          onChange={(e) => setSelectedOption(e.target.value)}
+          value={selectedOption}
+        >
+          <option value="" disabled>
+            Choose an option
+          </option>
+          {Object.keys(explanations).map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+        {selectedOption && (
+          <p className="explanation">
+            <strong>{selectedOption}:</strong> {explanations[selectedOption]}
+          </p>
+        )}
             <section>
                 <h2>Address in Portugal</h2>
                 <p>Applicants need a local address before relocating. Most people rent a property, while some choose to buy. It’s also possible to obtain a letter of invitation from a host.</p>

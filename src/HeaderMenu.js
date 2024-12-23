@@ -33,6 +33,7 @@ function HeaderMenu() {
               <li className="dropdown-item"><Link to="/immigration/visas">Visas</Link></li>
               <li className="dropdown-item"><Link to="/immigration/documents">Documents</Link></li>
               <li className="dropdown-item"><Link to="/immigration/process">Process</Link></li>
+              <li className="dropdown-item"><Link to="/immigration/bank">Banks</Link></li>
               <li className="dropdown-item"><Link to="/immigration/addresses">Addresses</Link></li>
             </ul>
           )}
@@ -47,9 +48,10 @@ function HeaderMenu() {
           </Link>
           {activeMenu === 'stepsInCanada' && (
             <ul className="dropdown-menu">
-              <li className="dropdown-item"><Link to="/steps-in-canada/ircc">IRCC</Link></li>
+              <li className="dropdown-item"><Link to="/steps-in-canada/ircc">Steps before immigration</Link></li>
               <li className="dropdown-item"><Link to="/steps-in-canada/taxes">Taxes and CRA</Link></li>
               <li className="dropdown-item"><Link to="/steps-in-canada/property">Mortgage and property</Link></li>
+              <li className="dropdown-item"><Link to="/steps-in-canada/banks">Banks in Canada</Link></li>
               <li className="dropdown-item"><Link to="/steps-in-canada/moving">Moving facilities</Link></li>
             </ul>
           )}
@@ -66,8 +68,8 @@ function HeaderMenu() {
             <ul className="dropdown-menu">
               <li className="dropdown-item"><Link to="/steps-in-portugal/nif">Número de Contribuinte (NIF)</Link></li>
               <li className="dropdown-item"><Link to="/steps-in-portugal/nhr">Non-Habitual Resident (NHR) Regime</Link></li>
-              <li className="dropdown-item"><Link to="/steps-in-portugal/property">Renting and buying property</Link></li>
               <li className="dropdown-item"><Link to="/steps-in-portugal/bank">Bank account</Link></li>
+              <li className="dropdown-item"><Link to="/steps-in-portugal/property">Renting and buying property</Link></li>
               <li className="dropdown-item"><Link to="/steps-in-portugal/moving">Sef</Link></li>
             </ul>
           )}

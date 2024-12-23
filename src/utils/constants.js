@@ -1,7 +1,9 @@
-const modalData = {
+export const month_wage = 870;
+
+export const modalData = {
     financialResources: (
         <p>
-            If you choose the Portugal D7 visa, you'll need to meet the passive income requirements and earn above the Portuguese minimum wage at least 820.00 euros per month (your income can be foreign sourced). Passive income includes pensions, rental income, investments, royalties, and annuities.
+            If you choose the Portugal D7 visa, you'll need to meet the passive income requirements and earn above the Portuguese minimum wage at least {month_wage} euros per month (your income can be foreign sourced). Passive income includes pensions, rental income, investments, royalties, and annuities.
         </p>
     ),
     criminalCanada: (
@@ -45,7 +47,7 @@ const modalData = {
     ),
     financialResources: (
         <p>
-            The minimum wage in most of Portugal is €822.50 per month, assuming 12 annual payments. In practice, however, payments are paid in 14 annual installments, so the minimum payment, in this case, would be €705. Therefore, the minimum amount in your account should be €2467.5. Keep in mind that it is always better to have a larger amount.
+            The minimum wage in most of Portugal is €{month_wage} per month, assuming 12 annual payments. Therefore, the minimum amount in your account should be €{month_wage*12}. Keep in mind that it is always better to have a larger amount.
         </p>
     ),
     expressionOfInterest: (
@@ -62,4 +64,5 @@ const modalData = {
     )
 };
 
-export default modalData;
+ 
+

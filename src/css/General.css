@@ -1,13 +1,13 @@
 .job-seeker-container {
-    max-width: 800px;
+    max-width: calc(100% - 630px); /* Adjust for preferred width */
     margin: 0 auto;
-    padding: 200px;
+    padding: 50px 0 100px 100px;
     text-align: left;
+    position: unset;
     font-size: 1rem;
     color: black;
     margin-left: -2px;
     margin-left: 10px; /* Adjust for preferred left alignment */
-    max-width: 800px;
 }
 
 .job-seeker-container h2 {
@@ -258,6 +258,43 @@ h1, h2 {
   .guide-list {
     padding-left: 20px;
     list-style-type: disc;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column; /* Элементы будут расположены вертикально */
+    align-items: flex-start; /* Выравнивание элементов по левому краю (по умолчанию) */
+    gap: 10px; /* Отступ между элементами */
+  }
+
+  .container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .bank {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .bank h2 {
+    color: #007BFF;
+  }
+  
+  .bank a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .bank a:hover {
+    text-decoration: underline;
+  }
+  
+  .bank ul {
+    list-style-type: disc;
+    margin-left: 20px;
   }
   
 
