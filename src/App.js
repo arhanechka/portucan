@@ -58,7 +58,7 @@ function App() {
           <Route path="/immigration/addresses" element={<Addresses />} /> 
           <Route path="/immigration/bank" element={<Banks />} /> 
 
-          <Route path="/visas/hasPassiveIncome" element={<PassiveIncome />} /> 
+          <Route path="/visas/hasPassiveIncome" element={<PassiveIncome />} />
           <Route path="/visas/isFreelancer" element={<Freelancer />} /> 
           <Route path="/visas/hasChild" element={<ChildResidency />} /> 
           <Route path="/visas/hasFamilyMember" element={<FamilyMember />} /> 
