@@ -49,10 +49,10 @@ function App() {
             <Route path="/immigration" element={<Immigration />} />
             <Route path="/immigration/visas" element={<Visas />} />
             <Route path="/immigration/documents" element={<Documents />} />
-            {/* <Route path="/steps-in-canada" element={<StepsInCanada />} />
+            <Route path="/steps-in-canada" element={<StepsInCanada />} />
           <Route path="/steps-in-portugal" element={<StepsInPortugal />} />
           <Route path="/our-service" element={<OurService />} />
-          <Route path="/about" element={<About />} />*/}
+          <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} /> 
           <Route path="/links" element={<Links />} /> 
           <Route path="/visas/lookForJob" element={<JobSeeker />} /> 
