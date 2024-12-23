@@ -35,7 +35,7 @@ import Documents from './components/documents/Documents';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portucan">
       <div className="App">
       <img src={logo} className='App-logo' alt="logo" />
         <HeaderMenu />
@@ -45,7 +45,6 @@ function App() {
         <div className="App-main">
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/portucan" element={<Main />} />
             <Route path="/immigration" element={<Immigration />} />
             <Route path="/immigration/visas" element={<Visas />} />
             <Route path="/immigration/documents" element={<Documents />} />
