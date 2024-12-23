@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portucan/static/css/main.ecb566de.css",
-    "main.js": "/portucan/static/js/main.a373e267.js",
+    "main.js": "/portucan/static/js/main.70c7d609.js",
     "static/js/453.346eee47.chunk.js": "/portucan/static/js/453.346eee47.chunk.js",
     "static/media/collage.jpg": "/portucan/static/media/collage.64b530ecd2086a20b531.jpg",
     "static/media/logo.png": "/portucan/static/media/logo.50407b826fab0318f6d6.png",
@@ -9,11 +9,11 @@
     "static/media/arrow.webp": "/portucan/static/media/arrow.a32a66fc861e7805ea4d.webp",
     "index.html": "/portucan/index.html",
     "main.ecb566de.css.map": "/portucan/static/css/main.ecb566de.css.map",
-    "main.a373e267.js.map": "/portucan/static/js/main.a373e267.js.map",
+    "main.70c7d609.js.map": "/portucan/static/js/main.70c7d609.js.map",
     "453.346eee47.chunk.js.map": "/portucan/static/js/453.346eee47.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecb566de.css",
-    "static/js/main.a373e267.js"
+    "static/js/main.70c7d609.js"
   ]
 }
