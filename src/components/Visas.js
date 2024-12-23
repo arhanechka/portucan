@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import '../css/Visas.css';  
+import { Link } from 'react-router-dom';
+
+import '../css/Visas.css';
 function Visas() {
     const [selectedOptions, setSelectedOptions] = useState({
         hasFamilyMember: false,
@@ -62,7 +64,7 @@ function Visas() {
                 return `The general Visa for Portugal, known as the D1 Visa, allows non-EU nationals to enter and stay in Portugal for up to six months to search for employment. This visa gives applicants the flexibility to actively look for a job and later convert it into a residence permit if they secure a work contract. Applicants need proof of financial means to sustain their stay, valid health insurance, and a clean criminal record. This visa is intended for those who intend to work and live in Portugal on a long-term basis.`
             case 'willingToLearnLanguage':
                 return `In Portugal, it is generally not common to issue a visa specifically for Portuguese language courses. However, there are still options – you can try applying for a Student Visa (Visto de Estudante) or a Temporary Stay Visa (Visto de Curta Duração). To obtain this visa, you need proof of enrollment in a course lasting more than 90 days. Overall, this is not a very reliable option for obtaining a visa, and if possible, we would recommend considering other alternatives.`
-                default:
+            default:
                 return '';
         }
     };
@@ -159,13 +161,13 @@ function Visas() {
                 </label>
             </form>
             <div className="selected-options">
-            {visibleTextBlocks.map(option => (
+                {visibleTextBlocks.map(option => (
                     <div key={option} className="TextBlock">
                         <div className="TextBlock-title">{getOptionTitle(option)}</div>
                         <div className="TextBlock-content">
-                            {getOptionText(option)} 
+                            {getOptionText(option)}
                         </div>
-                        <a href={`/portucan/visas/${option}`}  className="more-link">More...</a>
+                        <Link to={`/visas/${option}`} className="more-link">More...</Link>
                     </div>
                 ))}
             </div>
