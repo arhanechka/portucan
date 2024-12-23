@@ -3,7 +3,7 @@ import '../../css/General.css';
 
 const Banks = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className='App-text'>Overview of Portuguese Banks in Portugal and Canada</h1>
       <p>
         Portugal’s banking system offers a variety of services tailored to residents and non-residents. These include account management, mobile banking, credit facilities, and investment options. Here's a breakdown of key banks, approximate service fees, and the process for opening an account as a foreigner.

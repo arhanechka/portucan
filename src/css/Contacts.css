@@ -3,7 +3,7 @@
     margin-top: 50px;
     max-width: 800px;
     margin: 0 auto;
-    position: relative; /* Позволяет тексту оставаться над чекбоксами */
+    position: relative; 
     margin-left: -2px;
   }
   
@@ -119,7 +119,6 @@
     font-style: italic;
   }
 
-  /* Add styles for error states */
 .contact-form input.error, 
 .contact-form textarea.error {
   border: 1px solid red;
@@ -131,7 +130,6 @@
   margin-top: 5px;
 }
 
-/* Optional: Add a slight padding/margin for better spacing between the fields */
 .contact-form input, 
 .contact-form textarea {
   margin-bottom: 10px;

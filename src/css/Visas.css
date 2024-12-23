@@ -7,14 +7,14 @@
     margin-top: 50px;
     max-width: 800px;
     margin: 0 auto;
-    position: relative; /* Позволяет тексту оставаться над чекбоксами */
+    position: relative; 
     margin-left: -2px;
 }
 
 .Visa-text {
     text-align: center;
-    margin-bottom: 20px; /* Отступ для отделения от чекбоксов */
-    z-index: 2; /* Приоритетный слой для текста */
+    margin-bottom: 20px; 
+    z-index: 2; 
 }
 
 .Visa-text p {
@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    z-index: 1; /* Задний слой для чекбоксов */
+    z-index: 1; 
 }
 
 .checkbox-label input {

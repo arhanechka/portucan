@@ -2,7 +2,7 @@ import React from "react";
 
 const Property = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className="App-text">Tax Implications for Non-Residents with Property in Canada</h1>
       <section>
         <h2 className="subsection-title">1. Owning Property in Canada as a Non-Resident</h2>

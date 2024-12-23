@@ -50,7 +50,7 @@ function Nif() {
     };
 
     return (
-        <div className="job-seeker-container">
+        <div className="general-container">
             <div className="content-container">
                 <h1 className="App-text" style={{ top: '7vh' }}>Número de Contribuinte (NIF)</h1>
                 <p>

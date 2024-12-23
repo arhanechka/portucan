@@ -69,8 +69,9 @@ function Documents() {
   ];
 
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className="App-text">Main Documents Requirements</h1>
+      <h4> <i>It is recommended to have all copies of notarized and apostilled documents that are no older than 3 months from the date of issuance.</i></h4>
       <ul >
         {documentRequirements.map((doc) => (
           <li key={doc.key} className="document-item">

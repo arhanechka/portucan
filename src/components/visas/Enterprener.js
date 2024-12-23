@@ -9,7 +9,7 @@ const Entrepreneur = () => {
   };
 
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className="App-text">Portugal D2 Visa for entrepreneurs</h1>
       <p>
         If you’re in Canada and planning to set up a business or work independently in Portugal, the D2 Visa is your gateway. This guide simplifies the process, highlighting the steps to apply for the Portugal D2 Visa, essential requirements, and the economic benefits waiting for you.

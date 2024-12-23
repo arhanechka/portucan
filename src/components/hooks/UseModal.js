@@ -5,7 +5,7 @@ function useModal(modalData) {
   const [modalContent, setModalContent] = useState('');
 
   const openModal = (modalKey) => {
-    setModalContent(modalData[modalKey]);  // Get content from modalData based on the key
+    setModalContent(modalData[modalKey]);  
     setModalOpen(true);
   };
 

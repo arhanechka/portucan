@@ -16,7 +16,8 @@ export const modalData = {
     ),
     criminalPortugal: (
         <p>
-            The Portuguese Criminal Check Consent form, required for certain visa applications like the D7, allows Portuguese immigration authorities to conduct a background check on you within Portugal’s criminal records system. Even if you have never lived in Portugal, this consent ensures that authorities can verify any record you may have in their system. <a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/portugal.html?fbclid=IwY2xjawGNz8BleHRuA2FlbQIxMAABHT9xmHHMPl__GtF0NEuGJebH40bCi_JlRbAl0sWipUS_371plYP4Pon42A_aem_yeeoGScuGC14b3TymE0dbw#spec' target='blank'>Here’s how to obtain and provide this consent for Canadians (If you live outside of Portugal -> Apply by email, mail, or fax)</a>
+            The Portuguese Criminal Check Consent form, required for certain visa applications like the D7, allows Portuguese immigration authorities to conduct a background check on you within Portugal’s criminal records system. Even if you have never lived in Portugal, this consent ensures that authorities can verify any record you may have in their system. <a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/portugal.html?fbclid=IwY2xjawGNz8BleHRuA2FlbQIxMAABHT9xmHHMPl__GtF0NEuGJebH40bCi_JlRbAl0sWipUS_371plYP4Pon42A_aem_yeeoGScuGC14b3TymE0dbw#spec' target='blank'>Here’s how to obtain and provide this consent for Canadians (If you live outside of Portugal -> Apply by email, mail, or fax.)</a>
+            <br/><a href="/authorization_criminal_record.doc" download="authorization_criminal_record.doc" target="_blank" rel="noopener noreferrer">Download it here</a>
         </p>
     ),
     sefAuthorization: (

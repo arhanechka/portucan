@@ -2,7 +2,7 @@ import React from 'react';
 
 const LanguageVisa = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className='App-text'>Visa for Long-Term Portuguese Language Courses</h1>
       <p>
         Obtaining a visa for studying Portuguese in Portugal can be somewhat complex. While Portugal doesn't have a specific visa solely for language courses, it is still possible to obtain a <strong>Student Visa (Visto de Estudante)</strong>, which is the most reliable option for those wishing to stay in Portugal for an extended period to study Portuguese. Here’s a breakdown of how you can navigate this process.

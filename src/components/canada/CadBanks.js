@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../css/General.css';  
+import '../../css/General.css';
 
 const CadBanks = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className='App-text'>Overview of Portuguese Banks in Canada</h1>
       <p>
         Portugal’s banking system offers a variety of services tailored to residents and non-residents. These include account management, mobile banking, credit facilities, and investment options. Here's a breakdown of key banks, approximate service fees, and the process for opening an account as a foreigner.
@@ -72,29 +72,29 @@ const CadBanks = () => {
           </p>
         </article>
         <article className="bank">
-  <h3>4.Millennium via Bordr</h3>
-  <p>
-    <strong>Website:</strong>{" "}
-    <a href="https://bordr.com" target="_blank" rel="noopener noreferrer">
-      Bordr
-    </a>
-  </p>
-  <p>
-    <strong>Setup Fees:</strong> Approximately €350, covering NIF assistance and signature certification.
-  </p>
-  <p>
-    <strong>Services:</strong> Bordr helps non-residents obtain a Portuguese tax number (NIF) and open Millennium bank accounts remotely.
-  </p>
-  <p>
-    <strong>Ease of Opening Accounts:</strong> Fully remote process with video verification and lawyer-certified documents; no physical presence required.
-  </p>
-  <p>
-    <strong>Required Documents:</strong> Passport, proof of address, Portuguese NIF, and proof of employment.
-  </p>
-  <p>
-    <strong>Additional Benefits:</strong> Streamlined access to EUR and USD accounts with personalized bank manager support.
-  </p>
-</article>
+          <h3>4.Millennium via Bordr</h3>
+          <p>
+            <strong>Website:</strong>{" "}
+            <a href="https://bordr.com" target="_blank" rel="noopener noreferrer">
+              Bordr
+            </a>
+          </p>
+          <p>
+            <strong>Setup Fees:</strong> Approximately €350, covering NIF assistance and signature certification.
+          </p>
+          <p>
+            <strong>Services:</strong> Bordr helps non-residents obtain a Portuguese tax number (NIF) and open Millennium bank accounts remotely.
+          </p>
+          <p>
+            <strong>Ease of Opening Accounts:</strong> Fully remote process with video verification and lawyer-certified documents; no physical presence required.
+          </p>
+          <p>
+            <strong>Required Documents:</strong> Passport, proof of address, Portuguese NIF, and proof of employment.
+          </p>
+          <p>
+            <strong>Additional Benefits:</strong> Streamlined access to EUR and USD accounts with personalized bank manager support.
+          </p>
+        </article>
 
       </section>
     </div>

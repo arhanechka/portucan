@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cra = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className="App-text">Steps to Notify the CRA of Your Non-Resident Status</h1>
       <p>
         When you leave Canada and become a non-resident, it's crucial to notify the <strong>Canada Revenue Agency (CRA)</strong> to ensure you meet your tax obligations. This process involves a few key steps, including informing the CRA of your departure, updating your residency status, and filing your tax returns properly. Below is a comprehensive guide on how to notify the CRA of your non-resident status and fulfill any related tax requirements.
@@ -12,7 +12,7 @@ const Cra = () => {
       <p>
         When you leave Canada and become a non-resident, you need to inform the CRA of your change in residency status. The CRA requires this information to determine which tax rules apply to you moving forward. You should notify the CRA about your departure as soon as possible, ideally before you leave or shortly after your departure.
       </p>
-      
+
       <h3>Step 1: Complete Form NR73 (Determination of Residency Status)</h3>
       <p>
         To formally inform the CRA of your non-resident status, you must complete <strong>Form NR73</strong> – <em>Determination of Residency Status (Leaving Canada)</em>. This form helps the CRA determine the date when you became a non-resident and provides clarity about your residency status for tax purposes.
@@ -24,7 +24,7 @@ const Cra = () => {
       <p>
         You can download <strong>Form NR73</strong> from the CRA website here: <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/nr73.html" target="_blank" rel="noopener noreferrer">Form NR73: Determination of Residency Status</a>.
       </p>
-      
+
       <h3>Step 2: Submit the Form to CRA</h3>
       <p>
         Once you've completed the form, you can submit it by mail to the CRA. The address for submitting Form NR73 is provided on the form itself.
@@ -43,7 +43,7 @@ const Cra = () => {
       <p>
         Even if you are leaving Canada, you are still required to file a <strong>final tax return</strong> for the year you leave. As a non-resident, you will file a <strong>T1 General Tax Return</strong> to report any Canadian-sourced income earned prior to your departure date.
       </p>
-      
+
       <h3>Step 1: File Your Tax Return by the Deadline</h3>
       <ul>
         <li><strong>Deadline</strong>: The deadline for filing your final tax return as a non-resident is <strong>June 30th of the year following your departure</strong>. For example, if you leave Canada in June 2024, you must file your final tax return by June 30, 2025.</li>

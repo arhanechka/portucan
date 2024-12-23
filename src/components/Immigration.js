@@ -1,10 +1,10 @@
 import React from 'react';
-import '../css/General.css';  // Add CSS styling for the component
+import '../css/General.css';  
 import '../css/Immigration.css'
 
 function Immigration() {
     return (
-        <div className="job-seeker-container">
+        <div className="general-container">
             <div className="content-container">
                 <div className="App-text" style={{top: '8vh'}}>
                     <p>Immigration</p>

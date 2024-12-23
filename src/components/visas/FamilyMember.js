@@ -14,7 +14,7 @@ const FamilyMember = () => {
   };
 
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className="App-text">Portugal’s Family Reunification Visa (D6)</h1>
 
       <section className="guide-section">

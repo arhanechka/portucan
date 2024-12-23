@@ -4,7 +4,7 @@ import '../../css/General.css';
 const PortProperty = () => {
 
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1  className='App-text'>Buying or Renting Property in Portugal for a Visa</h1>
       
       <section className="property-overview">

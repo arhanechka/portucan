@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../css/Contacts.css';  
-import aboutImage from '../assets/about-image.jpg';
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -36,16 +35,16 @@ const Contacts = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log('Form Data:', formData);
-      setFormData({ name: '', email: '', message: '' }); // Clear form on success
+      setFormData({ name: '', email: '', message: '' }); 
       setIsSubmitted(true);
-      setErrors({}); // Clear errors
+      setErrors({});
     } else {
       setIsSubmitted(false);
     }
   };
 
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className='App-text'>Contact Us</h1>
 
       {/* Contact Form Section */}

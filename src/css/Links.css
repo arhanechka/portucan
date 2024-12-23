@@ -5,7 +5,7 @@
     margin-top: 190px;
     max-width: 800px;
     margin: 0 auto;
-    position: relative; /* Позволяет тексту оставаться над чекбоксами */
+    position: relative; 
     margin-left: -2px;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .links-table th {
-    background-color: rgba(143, 144, 147, 0.8); /* Light background for header */
+    background-color: rgba(143, 144, 147, 0.8); 
     font-weight: bold;
 }
 

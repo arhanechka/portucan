@@ -2,7 +2,7 @@ import React from 'react';
 
 const StudyVisa = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1  className='App-text'>D4 Visa for Portugal: In-Depth Overview</h1>
 
       <section className="intro">

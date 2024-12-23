@@ -26,7 +26,7 @@ function PassiveIncome() {
     "Parents + 3 children": `Income: €${month_wage + month_wage/2 + (month_wage)*0.90} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)*0.30*3} `,
   };
     return (
-        <div className="job-seeker-container">
+        <div className="general-container">
             <h1 className='App-text'>Main Requirements for the D7 Visa</h1>
 
             <section>

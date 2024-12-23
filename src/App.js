@@ -37,7 +37,7 @@ function App() {
   return (
     <Router basename="/portucan">
       <div className="App">
-      <img src={logo} className='App-logo' alt="logo" />
+        <img src={logo} className='App-logo' alt="logo" />
         <HeaderMenu />
         <Link to="/">
           <img src={collage} className="App-image" alt="logo" />
@@ -48,41 +48,30 @@ function App() {
             <Route path="/immigration" element={<Immigration />} />
             <Route path="/immigration/visas" element={<Visas />} />
             <Route path="/immigration/documents" element={<Documents />} />
-            {/* <Route path="/steps-in-canada" element={<StepsInCanada />} /> */}
-          {/* <Route path="/steps-in-portugal" element={<StepsInPortugal />} />
-          <Route path="/our-service" element={<OurService />} />
-          <Route path="/about" element={<About />} /> */}
-          <Route path="/contacts" element={<Contacts />} /> 
-          <Route path="/links" element={<Links />} /> 
-          <Route path="/visas/lookForJob" element={<JobSeeker />} /> 
-          <Route path="/immigration/addresses" element={<Addresses />} /> 
-          <Route path="/immigration/bank" element={<Banks />} /> 
-
-          <Route path="/visas/hasPassiveIncome" element={<PassiveIncome />} />
-          <Route path="/visas/isFreelancer" element={<Freelancer />} /> 
-          <Route path="/visas/hasChild" element={<ChildResidency />} /> 
-          <Route path="/visas/hasFamilyMember" element={<FamilyMember />} /> 
-          <Route path="/visas/hasWorkContract" element={<WorkContract />} /> 
-          <Route path="/visas/hasBusiness" element={<Entrepreneur />} /> 
-          <Route path="/visas/willingToStudy" element={<StudyVisa />} /> 
-          <Route path="/visas/willingToLearnLanguage" element={<LanguageVisa />} /> 
-           
-          <Route path="/steps-in-canada/ircc" element={<MovingChecklist />} />
-          <Route path="/steps-in-canada/taxes" element={<Cra />} />
-          <Route path="/steps-in-canada/Election217" element={<Election217 />} />
-          <Route path="/steps-in-canada/property" element={<Property />} />
-          <Route path="/steps-in-canada/moving" element={<MovingToPortugal />} />
-          <Route path="/steps-in-canada/movingGuide" element={<MovingGuide />} />
-          <Route path="/steps-in-canada/banks" element={<CadBanks />} />
-          
-          
-          
-          <Route path="/steps-in-portugal/nif" element={<Nif />} />
-          <Route path="/steps-in-portugal/nhr" element={<Nhr />} />
-          <Route path="/steps-in-portugal/bank" element={<PortuBanks />} />
-          <Route path="/steps-in-portugal/property" element={<PortProperty />} />
-
-
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/links" element={<Links />} />
+            <Route path="/visas/lookForJob" element={<JobSeeker />} />
+            <Route path="/immigration/addresses" element={<Addresses />} />
+            <Route path="/immigration/bank" element={<Banks />} />
+            <Route path="/visas/hasPassiveIncome" element={<PassiveIncome />} />
+            <Route path="/visas/isFreelancer" element={<Freelancer />} />
+            <Route path="/visas/hasChild" element={<ChildResidency />} />
+            <Route path="/visas/hasFamilyMember" element={<FamilyMember />} />
+            <Route path="/visas/hasWorkContract" element={<WorkContract />} />
+            <Route path="/visas/hasBusiness" element={<Entrepreneur />} />
+            <Route path="/visas/willingToStudy" element={<StudyVisa />} />
+            <Route path="/visas/willingToLearnLanguage" element={<LanguageVisa />} />
+            <Route path="/steps-in-canada/ircc" element={<MovingChecklist />} />
+            <Route path="/steps-in-canada/taxes" element={<Cra />} />
+            <Route path="/steps-in-canada/Election217" element={<Election217 />} />
+            <Route path="/steps-in-canada/property" element={<Property />} />
+            <Route path="/steps-in-canada/moving" element={<MovingToPortugal />} />
+            <Route path="/steps-in-canada/movingGuide" element={<MovingGuide />} />
+            <Route path="/steps-in-canada/banks" element={<CadBanks />} />
+            <Route path="/steps-in-portugal/nif" element={<Nif />} />
+            <Route path="/steps-in-portugal/nhr" element={<Nhr />} />
+            <Route path="/steps-in-portugal/bank" element={<PortuBanks />} />
+            <Route path="/steps-in-portugal/property" element={<PortProperty />} />
           </Routes>
         </div>
       </div>

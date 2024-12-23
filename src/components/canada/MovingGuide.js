@@ -5,7 +5,7 @@ import '../../css/General.css';
 
 const MovingGuide = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className="guide-header">How to Move Your Belongings from Canada to Portugal</h1>
       <p className="guide-intro">
         Relocating from Canada to Portugal involves careful planning, especially when it comes to moving your belongings. 

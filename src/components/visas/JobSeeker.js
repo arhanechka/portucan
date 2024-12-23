@@ -16,7 +16,7 @@ function JobSeeker() {
     };
 
     return (
-        <div className="job-seeker-container">
+        <div className="general-container">
             <div className="content-container">
                 <h1 className="App-text" style={{ top: '7vh' }}>Job Seeker Visa</h1>
                 <p>

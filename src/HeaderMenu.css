@@ -73,21 +73,21 @@
   
   /* Hover effect for dropdown items */
   .dropdown-item:hover {
-    background-color: rgb(238, 235, 235); /* Change background color on hover */
-    color: #007BFF; /* Change text color on hover */
+    background-color: rgb(238, 235, 235); 
+    color: #007BFF; 
   }
   
   @media (max-width: 768px) {
     .menu-list {
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column; 
     }
     .dropdown-menu {
-      position: static; /* Keep dropdown under the menu item */
-      display: none; /* Hide dropdown in mobile view */
+      position: static; 
+      display: none; 
     }
   
     .menu-item:hover .dropdown-menu {
-      display: block; /* Show dropdown on hover */
+      display: block; 
     }
   }
   

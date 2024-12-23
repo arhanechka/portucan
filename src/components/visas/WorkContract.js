@@ -10,7 +10,7 @@ const WorkContract = () => {
   };
 
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
  <h1 className='App-text'>Portugal work visas</h1>
  <h2>There are two types of work visas in Portugal. Let’s explore their differences and find out which one is right for you.</h2>
       <h2>D1 vs D3</h2>

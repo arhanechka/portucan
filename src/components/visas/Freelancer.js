@@ -23,7 +23,7 @@ function Freelancer() {
     "Parents + 2 children": `Income: €${month_wage*4 + month_wage*2 + (month_wage*4)*0.60} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)/2}`,
     "Parents + 3 children": `Income: €${month_wage*4 + month_wage*2 + (month_wage*4)*0.90} per month + Savings: €${month_wage*12 + (month_wage*12)/2+(month_wage*12)*0.75} `,
   };
-    return (  <div className="job-seeker-container">
+    return (  <div className="general-container">
     <h1 className='App-text'>Overview of Portugal’s D8 Visa</h1>
 
     <section>

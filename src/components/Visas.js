@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../css/Visas.css';  // Добавим стили
-
+import '../css/Visas.css';  
 function Visas() {
     const [selectedOptions, setSelectedOptions] = useState({
         hasFamilyMember: false,
@@ -60,7 +59,7 @@ function Visas() {
             case 'willingToStudy':
                 return `The D4 Visa is for non-EU international students who wish to study in Portugal. It allows students to live in Portugal for the duration of their academic program at a recognized institution. To obtain the visa, applicants must provide proof of enrollment, sufficient financial resources, health insurance, accommodation in Portugal, and a clean criminal record. The visa is typically issued for the duration of the course and can be renewed as long as the student remains enrolled. After completing studies, students may transition to a work visa or apply for residency if they secure employment.`
             case 'lookForJob':
-                return `The Job-Seeker Visa for Portugal, known as the D1 Visa, allows non-EU nationals to enter and stay in Portugal for up to six months to search for employment. This visa gives applicants the flexibility to actively look for a job and later convert it into a residence permit if they secure a work contract. Applicants need proof of financial means to sustain their stay, valid health insurance, and a clean criminal record. This visa is intended for those who intend to work and live in Portugal on a long-term basis.`
+                return `The general Visa for Portugal, known as the D1 Visa, allows non-EU nationals to enter and stay in Portugal for up to six months to search for employment. This visa gives applicants the flexibility to actively look for a job and later convert it into a residence permit if they secure a work contract. Applicants need proof of financial means to sustain their stay, valid health insurance, and a clean criminal record. This visa is intended for those who intend to work and live in Portugal on a long-term basis.`
             case 'willingToLearnLanguage':
                 return `In Portugal, it is generally not common to issue a visa specifically for Portuguese language courses. However, there are still options – you can try applying for a Student Visa (Visto de Estudante) or a Temporary Stay Visa (Visto de Curta Duração). To obtain this visa, you need proof of enrollment in a course lasting more than 90 days. Overall, this is not a very reliable option for obtaining a visa, and if possible, we would recommend considering other alternatives.`
                 default:
@@ -166,7 +165,7 @@ function Visas() {
                         <div className="TextBlock-content">
                             {getOptionText(option)} 
                         </div>
-                        <a href={`/portucan/#/visas/${option}`}  className="more-link">More...</a>
+                        <a href={`/portucan/visas/${option}`}  className="more-link">More...</a>
                     </div>
                 ))}
             </div>

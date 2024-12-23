@@ -4,7 +4,7 @@ import '../../css/General.css';
 
 const Election217 = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
         <div className="flex-container">
       <h1 className="App-text">Electing Under Section 217</h1>
       <h2 >What It Is and How It Can Benefit You</h2>

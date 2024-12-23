@@ -3,7 +3,7 @@ import '../../css/General.css';
 
 const ChildResidency = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
     <h1 className='App-text'>Visa for Students (Ages 15-18) and their parents</h1>
 
       <section className="guide-section">

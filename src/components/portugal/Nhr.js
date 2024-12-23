@@ -3,7 +3,7 @@ import '../../css/General.css';
 
 function Nhr() {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className="App-text">Non-Habitual Resident (NHR) Tax Regime</h1>
 
       <section>

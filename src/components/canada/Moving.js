@@ -2,7 +2,7 @@ import React from 'react';
 
 const MovingToPortugal = () => {
   return (
-    <div className="job-seeker-container">
+    <div className="general-container">
       <h1 className="App-text">Moving Your Belongings from Canada to Portugal</h1>
       <p>
         Relocating from Canada to Portugal is an exciting step toward a new chapter in your life. Whether you're moving for work, studies, retirement, or family reasons, one of the most important tasks to consider is how to move your belongings. Here’s a detailed guide on how to efficiently relocate your things, the options available, and helpful resources to make the process smooth.
