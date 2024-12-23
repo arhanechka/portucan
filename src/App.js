@@ -45,6 +45,7 @@ function App() {
         <div className="App-main">
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/portucan" element={<Main />} />
             <Route path="/immigration" element={<Immigration />} />
             <Route path="/immigration/visas" element={<Visas />} />
             <Route path="/immigration/documents" element={<Documents />} />
