@@ -10,7 +10,7 @@
   left: 0;
   width: 150px;   
   height: auto;  
-
+  z-index: 10000;
 }
 
 
