@@ -23,16 +23,10 @@ const CityComparison = () => {
     }
 
     try {
-        
 
-        const baseUrl = 'http://portucan.s3-website.us-east-2.amazonaws.com/api';
-        const responseCanada = await fetch(`${baseUrl}/${cityCanada.toLowerCase()}.json`);
-        const responsePortugal = await fetch(`${baseUrl}/${cityPortugal.toLowerCase()}.json`);
-    
-        if (!responseCanada.ok || !responsePortugal.ok) {
-          throw new Error('Failed to fetch data');
-        }
-    
+    const responseCanada = await fetch(`/api/${cityCanada.toLowerCase()}.json`);
+  const responsePortugal = await fetch(`/api/${cityPortugal.toLowerCase()}.json`);
+
   const dataCanada = await responseCanada.json();
   const dataPortugal = await responsePortugal.json();
 console.log(dataCanada)
