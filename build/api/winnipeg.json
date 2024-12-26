@@ -1,0 +1,483 @@
+{
+    "data": {
+        "city": "Winnipeg",
+        "currency": "CAD",
+        "costs": [
+            {
+                "item": "Meal, Inexpensive Restaurant",
+                "cost": "25.00",
+                "range": {
+                    "low": "15.00",
+                    "high": "50.00"
+                }
+            },
+            {
+                "item": "Meal for 2 People, Mid-range Restaurant, Three-course",
+                "cost": "89.00",
+                "range": {
+                    "low": "60.00",
+                    "high": "130.00"
+                }
+            },
+            {
+                "item": "McMeal at McDonalds (or Equivalent Combo Meal)",
+                "cost": "14.97",
+                "range": {
+                    "low": "13.00",
+                    "high": "17.00"
+                }
+            },
+            {
+                "item": "Domestic Beer (0.5 liter draught)",
+                "cost": "7.00",
+                "range": {
+                    "low": "3.50",
+                    "high": "9.00"
+                }
+            },
+            {
+                "item": "Imported Beer (0.33 liter bottle)",
+                "cost": "8.50",
+                "range": {
+                    "low": "7.00",
+                    "high": "14.00"
+                }
+            },
+            {
+                "item": "Cappuccino (regular)",
+                "cost": "5.31",
+                "range": {
+                    "low": "3.00",
+                    "high": "8.00"
+                }
+            },
+            {
+                "item": "Coke/Pepsi (0.33 liter bottle)",
+                "cost": "3.21",
+                "range": {
+                    "low": "2.50",
+                    "high": "5.00"
+                }
+            },
+            {
+                "item": "Water (0.33 liter bottle)",
+                "cost": "2.43",
+                "range": {
+                    "low": "1.59",
+                    "high": "3.25"
+                }
+            },
+            {
+                "item": "Milk (regular), (1 liter)",
+                "cost": "2.01",
+                "range": {
+                    "low": "1.48",
+                    "high": "3.03"
+                }
+            },
+            {
+                "item": "Loaf of Fresh White Bread (500g)",
+                "cost": "2.91",
+                "range": {
+                    "low": "1.95",
+                    "high": "4.99"
+                }
+            },
+            {
+                "item": "Rice (white), (1kg)",
+                "cost": "5.64",
+                "range": {
+                    "low": "2.60",
+                    "high": "11.00"
+                }
+            },
+            {
+                "item": "Eggs (regular) (12)",
+                "cost": "4.27",
+                "range": {
+                    "low": "3.00",
+                    "high": "5.98"
+                }
+            },
+            {
+                "item": "Local Cheese (1kg)",
+                "cost": "13.19",
+                "range": {
+                    "low": "7.00",
+                    "high": "22.00"
+                }
+            },
+            {
+                "item": "Chicken Fillets (1kg)",
+                "cost": "14.61",
+                "range": {
+                    "low": "6.99",
+                    "high": "22.00"
+                }
+            },
+            {
+                "item": "Beef Round (1kg) (or Equivalent Back Leg Red Meat)",
+                "cost": "23.05",
+                "range": {
+                    "low": "10.00",
+                    "high": "36.00"
+                }
+            },
+            {
+                "item": "Apples (1kg)",
+                "cost": "5.42",
+                "range": {
+                    "low": "2.00",
+                    "high": "9.68"
+                }
+            },
+            {
+                "item": "Banana (1kg)",
+                "cost": "1.82",
+                "range": {
+                    "low": "1.00",
+                    "high": "5.00"
+                }
+            },
+            {
+                "item": "Oranges (1kg)",
+                "cost": "5.67",
+                "range": {
+                    "low": "3.00",
+                    "high": "12.00"
+                }
+            },
+            {
+                "item": "Tomato (1kg)",
+                "cost": "4.55",
+                "range": {
+                    "low": "2.00",
+                    "high": "9.00"
+                }
+            },
+            {
+                "item": "Potato (1kg)",
+                "cost": "3.57",
+                "range": {
+                    "low": "1.00",
+                    "high": "6.00"
+                }
+            },
+            {
+                "item": "Onion (1kg)",
+                "cost": "2.94",
+                "range": {
+                    "low": "1.50",
+                    "high": "6.00"
+                }
+            },
+            {
+                "item": "Lettuce (1 head)",
+                "cost": "3.38",
+                "range": {
+                    "low": "2.00",
+                    "high": "5.00"
+                }
+            },
+            {
+                "item": "Water (1.5 liter bottle)",
+                "cost": "2.26",
+                "range": {
+                    "low": "1.00",
+                    "high": "4.00"
+                }
+            },
+            {
+                "item": "Bottle of Wine (Mid-Range)",
+                "cost": "16.00",
+                "range": {
+                    "low": "13.00",
+                    "high": "25.00"
+                }
+            },
+            {
+                "item": "Domestic Beer (0.5 liter bottle)",
+                "cost": "4.55",
+                "range": {
+                    "low": "3.00",
+                    "high": "7.00"
+                }
+            },
+            {
+                "item": "Imported Beer (0.33 liter bottle)",
+                "cost": "3.96",
+                "range": {
+                    "low": "2.50",
+                    "high": "8.00"
+                }
+            },
+            {
+                "item": "Cigarettes 20 Pack (Marlboro)",
+                "cost": "20.50",
+                "range": {
+                    "low": "19.00",
+                    "high": "26.99"
+                }
+            },
+            {
+                "item": "One-way Ticket (Local Transport)",
+                "cost": "3.25",
+                "range": {
+                    "low": "3.00",
+                    "high": "3.75"
+                }
+            },
+            {
+                "item": "Monthly Pass (Regular Price)",
+                "cost": "111.65",
+                "range": {
+                    "low": "104.00",
+                    "high": "129.99"
+                }
+            },
+            {
+                "item": "Taxi Start (Normal Tariff)",
+                "cost": "4.00",
+                "range": {
+                    "low": "3.95",
+                    "high": "6.00"
+                }
+            },
+            {
+                "item": "Taxi 1km (Normal Tariff)",
+                "cost": "1.85",
+                "range": {
+                    "low": "1.60",
+                    "high": "2.00"
+                }
+            },
+            {
+                "item": "Taxi 1hour Waiting (Normal Tariff)",
+                "cost": "31.30",
+                "range": {
+                    "low": "30.00",
+                    "high": "40.00"
+                }
+            },
+            {
+                "item": "Gasoline (1 liter)",
+                "cost": "1.41",
+                "range": {
+                    "low": "1.15",
+                    "high": "1.60"
+                }
+            },
+            {
+                "item": "Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+                "cost": "33,978.00",
+                "range": {
+                    "low": "33,978.00",
+                    "high": "35,000.00"
+                }
+            },
+            {
+                "item": "Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)",
+                "cost": "29,056.42",
+                "range": {
+                    "low": "27,382.58",
+                    "high": "35,000.00"
+                }
+            },
+            {
+                "item": "Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
+                "cost": "188.08",
+                "range": {
+                    "low": "127.50",
+                    "high": "400.00"
+                }
+            },
+            {
+                "item": "Mobile Phone Monthly Plan with Calls and 10GB+ Data",
+                "cost": "55.26",
+                "range": {
+                    "low": "35.00",
+                    "high": "85.00"
+                }
+            },
+            {
+                "item": "Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)",
+                "cost": "85.10",
+                "range": {
+                    "low": "60.00",
+                    "high": "120.00"
+                }
+            },
+            {
+                "item": "Fitness Club, Monthly Fee for 1 Adult",
+                "cost": "51.14",
+                "range": {
+                    "low": "15.00",
+                    "high": "89.90"
+                }
+            },
+            {
+                "item": "Tennis Court Rent (1 Hour on Weekend)",
+                "cost": "42.00",
+                "range": {
+                    "low": "0.00",
+                    "high": "75.00"
+                }
+            },
+            {
+                "item": "Cinema, International Release, 1 Seat",
+                "cost": "15.99",
+                "range": {
+                    "low": "13.00",
+                    "high": "18.00"
+                }
+            },
+            {
+                "item": "Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child",
+                "cost": "1,104.86",
+                "range": {
+                    "low": "340.00",
+                    "high": "1,850.00"
+                }
+            },
+            {
+                "item": "International Primary School, Yearly for 1 Child",
+                "cost": "16,470.67",
+                "range": {
+                    "low": "12,000.00",
+                    "high": "22,000.00"
+                }
+            },
+            {
+                "item": "1 Pair of Jeans (Levis 501 Or Similar)",
+                "cost": "73.67",
+                "range": {
+                    "low": "30.00",
+                    "high": "120.00"
+                }
+            },
+            {
+                "item": "1 Summer Dress in a Chain Store (Zara, H&M, ...)",
+                "cost": "50.75",
+                "range": {
+                    "low": "25.00",
+                    "high": "75.00"
+                }
+            },
+            {
+                "item": "1 Pair of Nike Running Shoes (Mid-Range)",
+                "cost": "119.62",
+                "range": {
+                    "low": "80.00",
+                    "high": "150.00"
+                }
+            },
+            {
+                "item": "1 Pair of Men Leather Business Shoes",
+                "cost": "190.42",
+                "range": {
+                    "low": "105.00",
+                    "high": "300.00"
+                }
+            },
+            {
+                "item": "Apartment (1 bedroom) in City Centre",
+                "cost": "1,230.34",
+                "range": {
+                    "low": "990.00",
+                    "high": "1,600.00"
+                }
+            },
+            {
+                "item": "Apartment (1 bedroom) Outside of Centre",
+                "cost": "1,382.19",
+                "range": {
+                    "low": "1,200.00",
+                    "high": "1,700.00"
+                }
+            },
+            {
+                "item": "Apartment (3 bedrooms) in City Centre",
+                "cost": "2,000.00",
+                "range": {
+                    "low": "1,700.00",
+                    "high": "2,750.00"
+                }
+            },
+            {
+                "item": "Apartment (3 bedrooms) Outside of Centre",
+                "cost": "2,019.29",
+                "range": {
+                    "low": "1,700.00",
+                    "high": "2,500.00"
+                }
+            },
+            {
+                "item": "Price per Square Meter to Buy Apartment in City Centre",
+                "cost": "4,333.33",
+                "range": {
+                    "low": "3,500.00",
+                    "high": "5,500.00"
+                }
+            },
+            {
+                "item": "Price per Square Meter to Buy Apartment Outside of Centre",
+                "cost": "3,799.77",
+                "range": {
+                    "low": "2,798.62",
+                    "high": "4,500.00"
+                }
+            },
+            {
+                "item": "Average Monthly Net Salary (After Tax)",
+                "cost": "3,519.43",
+                "range": {
+                    "low": ""
+                }
+            },
+            {
+                "item": "Mortgage Interest Rate in Percentages (%), Yearly, for 20 Years Fixed-Rate",
+                "cost": "6.29",
+                "range": {
+                    "low": "4.84",
+                    "high": "6.90"
+                }
+            }
+        ]
+    },
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+        "content-length": "5603",
+        "content-type": "application/json; charset=utf-8"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "adapter": [
+            "xhr",
+            "http",
+            "fetch"
+        ],
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {},
+        "headers": {
+            "Accept": "application/json, text/plain, */*"
+        },
+        "method": "get",
+        "url": "http://localhost:5000/:Winnipeg"
+    },
+    "request": {}
+}
