@@ -53,9 +53,6 @@ setData({
     //     portugal: responsePortugal.data,
     //   });
 
-
-
-  // Функция для категоризации элементов
   const categorizeItems = (items) => {
     const categories = {
       'Real Estate': [],
@@ -108,7 +105,7 @@ setData({
 
   return (
     <div className="general-container">
-      <h1 className='App-text'>City Comparison: Canada vs Portugal</h1>
+      <h1 className='App-text'>City cost comparison: Canada vs Portugal</h1>
       <div className="select-container">
   <label className="select-label">
     Choose a city in Canada:

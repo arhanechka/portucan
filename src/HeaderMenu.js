@@ -101,7 +101,7 @@ function HeaderMenu() {
           <Link to="/articles">Articles</Link>
           {activeMenu === 'articles' && (
             <ul className="dropdown-menu">
-              <li className="dropdown-item"><Link to="/articles/cityComparison">City Comparison</Link></li>
+              <li className="dropdown-item"><Link to="/articles/cityComparison">City cost comparison</Link></li>
               </ul>
           )}
         </li>
