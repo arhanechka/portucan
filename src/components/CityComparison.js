@@ -23,10 +23,16 @@ const CityComparison = () => {
     }
 
     try {
+        
 
-    const responseCanada = await fetch(`/api/${cityCanada}.json`);
-  const responsePortugal = await fetch(`/api/${cityPortugal}.json`);
-
+        const baseUrl = 'http://portucan.s3-website.us-east-2.amazonaws.com/api';
+        const responseCanada = await fetch(`${baseUrl}/${cityCanada}.json`);
+        const responsePortugal = await fetch(`${baseUrl}/${cityPortugal}.json`);
+    
+        if (!responseCanada.ok || !responsePortugal.ok) {
+          throw new Error('Failed to fetch data');
+        }
+    
   const dataCanada = await responseCanada.json();
   const dataPortugal = await responsePortugal.json();
 console.log(dataCanada)
@@ -36,7 +42,14 @@ setData({
   canada: dataCanada.data,
   portugal: dataPortugal.data,
 });
-    //   const responseCanada = await axios.get(`http://localhost:5000/:${cityCanada}`);
+
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      alert('Failed to fetch data');
+    }
+  };
+
+      //   const responseCanada = await axios.get(`http://localhost:5000/:${cityCanada}`);
     //   const responsePortugal = await axios.get(`http://localhost:5000/:${cityPortugal}`);
     //   console.log(responseCanada)
     //   console.log(responsePortugal)
@@ -45,11 +58,6 @@ setData({
     //     canada: responseCanada.data,
     //     portugal: responsePortugal.data,
     //   });
-    } catch (error) {
-      console.error('Error fetching data:', error);
-      alert('Failed to fetch data');
-    }
-  };
 
 
 
