@@ -31,6 +31,7 @@ import CadBanks from './components/canada/CadBanks';
 import PortuBanks from './components/portugal/PortuBanks';
 import PortProperty from './components/portugal/PortProperty';
 import Documents from './components/documents/Documents';
+import CityComparison from './components/CityComparison';
 
 
 function App() {
@@ -73,6 +74,8 @@ function App() {
             <Route path="/steps-in-portugal/nhr" element={<Nhr />} />
             <Route path="/steps-in-portugal/bank" element={<PortuBanks />} />
             <Route path="/steps-in-portugal/property" element={<PortProperty />} />
+            <Route path="/articles/cityComparison" element={<CityComparison />} />
+
           </Routes>
         </div>
       </div>

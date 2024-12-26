@@ -84,7 +84,7 @@ function HeaderMenu() {
           </Link>
           {activeMenu === 'services' && (
             <ul className="dropdown-menu">
-              <li className="dropdown-item"><Link to="/sour-service/imigration">Immigration consultans</Link></li>
+              <li className="dropdown-item"><Link to="/our-service/imigration">Immigration consultans</Link></li>
               <li className="dropdown-item"><Link to="/our-service/accounting">Accounting</Link></li>
               <li className="dropdown-item"><Link to="/our-service/advocats">Advocats</Link></li>
               <li className="dropdown-item"><Link to="/our-service/realestate">Real estate</Link></li>
@@ -93,8 +93,17 @@ function HeaderMenu() {
             </ul>
           )}
         </li>
-        <li className="menu-item">
+        <li
+          className="menu-item"
+          onMouseEnter={() => handleMouseEnter('articles')}
+          onMouseLeave={handleMouseLeave}
+        >
           <Link to="/articles">Articles</Link>
+          {activeMenu === 'articles' && (
+            <ul className="dropdown-menu">
+              <li className="dropdown-item"><Link to="/articles/cityComparison">City Comparison</Link></li>
+              </ul>
+          )}
         </li>
         <li className="menu-item">
           <Link to="/contacts">Contacts</Link>
