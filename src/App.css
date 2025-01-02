@@ -85,7 +85,7 @@
 @media screen and (max-width: 768px) {
   body {
     min-height: 100vh;
-    background-image: url(http://localhost:3000/static/media/collage.64b530ecd2086a20b531.jpg);
+    background-image: url(img/collage.jpg);
     background-position: 0 0;
     background-size: 100% 100%;
     background-color: rgba(255, 255, 255, 0.8) !important;
