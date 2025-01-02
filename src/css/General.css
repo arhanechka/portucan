@@ -1,7 +1,7 @@
 .general-container {
-  max-width: calc(100% - 630px);
+  max-width: 60vw;
   margin: 0 auto;
-  padding: 50px 0 100px 100px;
+  padding: 50px 0 0 10px;
   text-align: left;
   position: unset;
   font-size: 1rem;
