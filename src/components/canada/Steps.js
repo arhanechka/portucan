@@ -7,24 +7,32 @@ const MovingChecklist = () => {
       content: (
         <>
           <p>
-            <strong>Bank Accounts and Investments</strong>: Decide whether to maintain or close these accounts.
+            <strong>Bank Accounts and Investments</strong>: Decide whether to
+            maintain or close these accounts.
           </p>
           <ul>
             <li>
-              <strong>TFSA</strong>: While it remains tax-free in Canada, income generated may be taxable in Portugal.
+              <strong>TFSA</strong>: While it remains tax-free in Canada, income
+              generated may be taxable in Portugal.
             </li>
             <li>
-              <strong>RRSP</strong>: Withdrawals are taxed in Canada, with a withholding rate of 25% for non-residents,
-              unless modified by the Canada-Portugal tax treaty.
+              <strong>RRSP</strong>: Withdrawals are taxed in Canada, with a
+              withholding rate of 25% for non-residents, unless modified by the
+              Canada-Portugal tax treaty.
             </li>
-            <li>Consult a financial advisor to understand your options fully.</li>
+            <li>
+              Consult a financial advisor to understand your options fully.
+            </li>
           </ul>
           <p>
             <strong>Credit Cards and Banking</strong>:
           </p>
           <ul>
             <li>Notify your bank of your move to prevent account freezes.</li>
-            <li>Open a Portuguese bank account if possible or research local options to do so after arrival.</li>
+            <li>
+              Open a Portuguese bank account if possible or research local
+              options to do so after arrival.
+            </li>
             <li>Pay off any Canadian debts to avoid complications later.</li>
           </ul>
           <p>
@@ -45,28 +53,33 @@ const MovingChecklist = () => {
       content: (
         <>
           <p>
-            <strong>Notify the Canada Revenue Agency (CRA)</strong>: Inform the CRA of your departure to change your tax
-            status to a non-resident.
+            <strong>Notify the Canada Revenue Agency (CRA)</strong>: Inform the
+            CRA of your departure to change your tax status to a non-resident.
           </p>
           <p>
-            <strong>File a Final Canadian Tax Return</strong>: Report worldwide income up to your departure date.
+            <strong>File a Final Canadian Tax Return</strong>: Report worldwide
+            income up to your departure date.
           </p>
           <p>
-            <strong>Exit Tax on Investments</strong>: If you own stocks or other investments, you may need to declare a
-            "deemed disposition," essentially treating your holdings as if sold.
+            <strong>Exit Tax on Investments</strong>: If you own stocks or other
+            investments, you may need to declare a "deemed disposition,"
+            essentially treating your holdings as if sold.
           </p>
           <p>
             <strong>What to Do with CRA:</strong>
           </p>
           <ul>
-            <li>Update your address to ensure CRA correspondence reaches you.</li>
             <li>
-              Complete Form NR73 (Determination of Residency Status) if needed, especially if your residency status is
-              unclear.
+              Update your address to ensure CRA correspondence reaches you.
             </li>
             <li>
-              If you receive government benefits (e.g., GST/HST credits, child benefits), notify the CRA to stop or
-              adjust payments based on your non-resident status.
+              Complete Form NR73 (Determination of Residency Status) if needed,
+              especially if your residency status is unclear.
+            </li>
+            <li>
+              If you receive government benefits (e.g., GST/HST credits, child
+              benefits), notify the CRA to stop or adjust payments based on your
+              non-resident status.
             </li>
           </ul>
           <p>
@@ -87,8 +100,14 @@ const MovingChecklist = () => {
       content: (
         <>
           <ul>
-            <li>Notify your provincial health provider about your departure. Most plans stop coverage after you leave.</li>
-            <li>Secure international health insurance to cover you during the transition.</li>
+            <li>
+              Notify your provincial health provider about your departure. Most
+              plans stop coverage after you leave.
+            </li>
+            <li>
+              Secure international health insurance to cover you during the
+              transition.
+            </li>
           </ul>
         </>
       ),
@@ -98,8 +117,13 @@ const MovingChecklist = () => {
       content: (
         <>
           <ul>
-            <li>Cancel services like electricity, internet, and streaming platforms.</li>
-            <li>Research driver’s license exchange requirements for Portugal.</li>
+            <li>
+              Cancel services like electricity, internet, and streaming
+              platforms.
+            </li>
+            <li>
+              Research driver’s license exchange requirements for Portugal.
+            </li>
           </ul>
         </>
       ),
@@ -110,7 +134,9 @@ const MovingChecklist = () => {
         <>
           <ul>
             <li>Provide proper notice to your landlord if renting.</li>
-            <li>Decide whether to sell, rent, or keep your property if you own it.</li>
+            <li>
+              Decide whether to sell, rent, or keep your property if you own it.
+            </li>
           </ul>
         </>
       ),
@@ -143,7 +169,10 @@ const MovingChecklist = () => {
       content: (
         <>
           <ul>
-            <li>Evaluate what belongings to ship and research customs regulations in Portugal.</li>
+            <li>
+              Evaluate what belongings to ship and research customs regulations
+              in Portugal.
+            </li>
             <li>Ensure pets meet vaccination and microchip requirements.</li>
           </ul>
         </>
@@ -155,13 +184,18 @@ const MovingChecklist = () => {
         <>
           <ul>
             <li>
-              Understand visa requirements, whether it’s the D7 visa (passive income) or D8 visa (digital nomads).
+              Understand visa requirements, whether it’s the D7 visa (passive
+              income) or D8 visa (digital nomads).
             </li>
             <li>Plan for obtaining your residence permit after arrival.</li>
           </ul>
           <p>
             <strong>Reference:</strong>{" "}
-            <a href="https://www.sef.pt/en/Pages/Homepage.aspx" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.sef.pt/en/Pages/Homepage.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Portugal’s visa options
             </a>
           </p>
@@ -173,8 +207,14 @@ const MovingChecklist = () => {
       content: (
         <>
           <ul>
-            <li>Inform your employer, insurance providers, and others about your move.</li>
-            <li>Redirect your mail via Canada Post to avoid missing important correspondence.</li>
+            <li>
+              Inform your employer, insurance providers, and others about your
+              move.
+            </li>
+            <li>
+              Redirect your mail via Canada Post to avoid missing important
+              correspondence.
+            </li>
           </ul>
         </>
       ),
@@ -184,12 +224,17 @@ const MovingChecklist = () => {
       content: (
         <>
           <p>
-            Portugal offers tax benefits like the Non-Habitual Resident (NHR) program, which may exempt foreign income
-            from Portuguese taxes for up to 10 years.
+            Portugal offers tax benefits like the Non-Habitual Resident (NHR)
+            program, which may exempt foreign income from Portuguese taxes for
+            up to 10 years.
           </p>
           <p>
             <strong>Reference:</strong>{" "}
-            <a href="https://www.portugal.gov.pt/en" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.portugal.gov.pt/en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               NHR program
             </a>
           </p>
@@ -200,9 +245,11 @@ const MovingChecklist = () => {
 
   return (
     <div className="general-container">
-      <h1 className="App-text">Essential Steps to Take in Canada Before Immigrating to Portugal</h1>
+      <h1 className="App-text">
+        Essential Steps to Take in Canada Before Immigrating to Portugal
+      </h1>
       {steps.map((step, index) => (
-        <div key={index} style={styles.step}>
+        <div key={index} className="main-class" style={styles.step}>
           <h2 style={styles.stepTitle}>
             {index + 1}. {step.title}
           </h2>

@@ -2,29 +2,25 @@
   text-align: center;
 }
 
-
-
 .App-logo {
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;   
-  height: auto;  
+  width: 150px;
+  height: auto;
   z-index: 10000;
 }
 
-
 .App-image {
-  position: fixed;      
-  right: 0;               
-  height: 100vh;         
-  animation: none;  
-  top: 0      ;  
-  display: block;         
-  margin: 0;    
+  position: fixed;
+  right: 0;
+  height: 100%;
+  animation: none;
+  top: 0;
+  display: block;
+  margin: 0;
   mask-image: linear-gradient(to right, transparent 0%, black 20%);
 }
-
 
 .App-main {
   display: flex;
@@ -41,35 +37,32 @@
 
 .App-text {
   position: unset;
-  max-width: 100%; 
+  max-width: 100%;
   left: 140px;
   top: 18vh;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 3.5rem;
   color: black;
   font-weight: 400;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-
 .App-descr {
   position: relative;
   top: 7vh;
-  font-family: 'Dancing Script', cursive; 
+  font-family: "Dancing Script", cursive;
   font-size: 2rem;
   color: black;
   font-weight: 400;
 }
 
 .main-class {
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 1.6;
-  color: #333; 
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); 
-  margin-top: 20px; 
+  color: #333;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
 }
-
-
 
 @keyframes App-logo-spin {
   from {
@@ -77,5 +70,67 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .general-container p {
+    line-height: unset;
+  }
+  .general-container {
+    padding: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    background-image: url(http://localhost:3000/static/media/collage.64b530ecd2086a20b531.jpg);
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    background-blend-mode: lighten;
+  }
+  .App-text {
+    font-size: 2rem;
+    margin: 60px 0 0 0;
+    text-align: center;
+  }
+  .App-descr {
+    font-size: 1.5rem;
+    top: unset;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .main-class {
+    padding: 5px 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    text-indent: 1.5em;
+  }
+  .content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .general-container {
+    max-width: unset !important;
+    padding: unset !important;
+    margin: 10px !important;
+  }
+
+  .App-logo {
+    width: 64px;
+    padding: 7px;
+    z-index: 1000;
+  }
+  .App-image {
+    position: relative;
+    opacity: 0.5;
+    display: none;
   }
 }

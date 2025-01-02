@@ -1,94 +1,176 @@
 .header-menu {
-    display: flex;
-    justify-content: flex-end; /* Размещаем меню справа */
-    background-color: rgba(243, 245, 249, 0.5); /* Полупрозрачный фон для всего меню */
-    padding: 10px 20px;
-    border-radius: 5px;
-    position: sticky; /* Для того чтобы выпадающее меню было правильно позиционировано */
-    z-index: 1000;
-    top: 0; 
-  }
-  
-  .menu-list {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-item {
-    position: relative; /* Для позиционирования выпадающего меню */
-    margin-left: 20px;
-  }
-  
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    right: 0; /* Позиционируем выпадающее меню справа */
-    background-color: rgba(243, 245, 249, 0.9); /* Полупрозрачный фон для подменю */
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Легкая тень для границ */
-    display: none; /* Скрыть меню по умолчанию */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    border-radius: 5px;
-  }
-  
-  .dropdown-item {
-    padding: 8px 16px;
-  }
-  
-  .dropdown-item a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-  }
-  
-  .menu-item:hover .dropdown-menu {
-    display: block; /* Показать меню при наведении */
-  }
-  
+  display: flex;
+  justify-content: flex-end; /* Размещаем меню справа */
+  background-color: rgba(
+    243,
+    245,
+    249,
+    0.5
+  ); /* Полупрозрачный фон для всего меню */
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: sticky; /* Для того чтобы выпадающее меню было правильно позиционировано */
+  z-index: 1000;
+  top: 0;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  position: relative; /* Для позиционирования выпадающего меню */
+  margin-left: 20px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0; /* Позиционируем выпадающее меню справа */
+  background-color: rgba(
+    243,
+    245,
+    249,
+    0.9
+  ); /* Полупрозрачный фон для подменю */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Легкая тень для границ */
+  display: none; /* Скрыть меню по умолчанию */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.menu-item:hover .dropdown-menu {
+  display: block; /* Показать меню при наведении */
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover > a {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Плавное изменение фона при наведении */
+}
+
+.dropdown-item {
+  margin: 5px 0;
+  padding: 8px 12px;
+  color: #333; /* Default text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+  background-color: rgb(238, 235, 235);
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
   .menu-item a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 15px;
-    display: block;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin: 0 25px;
   }
-  
-  .menu-item:hover > a {
-    background-color: rgba(0, 0, 0, 0.1); /* Плавное изменение фона при наведении */
+  .menu-item {
+    margin: 0;
+  }
+  .menu-list {
+    flex-direction: column;
+  }
+  .dropdown-menu {
+    position: static;
+    display: none;
   }
 
-  .dropdown-item {
-    margin: 5px 0;
-    padding: 8px 12px;
-    color: #333; /* Default text color */
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  .menu-item:hover .dropdown-menu {
+    display: block;
   }
-  
-  /* Hover effect for dropdown items */
-  .dropdown-item:hover {
-    background-color: rgb(238, 235, 235); 
-    color: #007BFF; 
+}
+
+/* @media screen and (max-width: 480px) */
+
+@media screen and (max-width: 768px) {
+  .header-menu {
+    display: none;
   }
-  
-  @media (max-width: 768px) {
-    .menu-list {
-      flex-direction: column; 
-    }
-    .dropdown-menu {
-      position: static; 
-      display: none; 
-    }
-  
-    .menu-item:hover .dropdown-menu {
-      display: block; 
-    }
+  .header-menu.enabled {
+    display: block;
+    background-color: rgba(243, 245, 249, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    overflow-y: visible;
+    width: 90%;
+    backdrop-filter: blur(2px);
+    font-weight: bold;
   }
-  
-  
+
+  div.hamburger {
+    cursor: pointer;
+    margin: 5px 5px 0 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    /* background-color: #333; */
+    box-shadow: inset 1px 1px 2px 1px #888;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate first bar */
+  .change.bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  /* Fade out the second bar */
+  .change.bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .change.bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu.enabled {
+    width: 100%;
+  }
+}

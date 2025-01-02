@@ -1,46 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
 .links-container {
-    padding: 200px;
-    margin-top: 190px;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative; 
-    margin-left: -2px;
+  padding: 200px;
+  margin-top: 190px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  margin-left: -2px;
 }
 
 .links-title {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
 }
 
 .links-table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .links-table th,
 .links-table td {
-    text-align: left;
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-    color: #000;
-    font-size: 1rem;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  font-size: 1rem;
 }
 
 .links-table th {
-    background-color: rgba(143, 144, 147, 0.8); 
-    font-weight: bold;
+  background-color: rgba(143, 144, 147, 0.8);
+  font-weight: bold;
 }
 
 .links-table a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .links-table a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+td {
+  word-break: break-all;
 }
